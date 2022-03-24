@@ -17,7 +17,12 @@
     />
   </head>
   <body>
-    <div id="app">
+    <script
+      type="text/javascript"
+      src="https://akya.io/js/form/app.min.js"
+    ></script>
+
+    <div id="app" class="visible">
       <div id="mobile-menu" style="display: none">
         <span class="material-icons">close</span>
         <ul id="items"></ul>
@@ -25,7 +30,7 @@
       <section id="first">
         <div id="first-section-menu">
           <span class="material-icons open-menu">play_circle</span>
-          <div class="menu-icons">
+          <div id="desktop-menu-icons" class="menu-icons">
             <span class="material-icons nav active">house</span>
             <span class="material-icons nav">note_alt</span>
             <span class="material-icons nav">where_to_vote</span>
@@ -41,10 +46,10 @@
               <div class="burger b-top"></div>
               <div class="burger b-bottom"></div>
             </div>
-            <div class="phone">
+            <a href="tel:020 8558 9900" class="phone">
               <span class="material-icons call">call</span>
               <span>020 8558 9900</span>
-            </div>
+            </a>
           </div>
           <div class="first-section-main-mid">
             <div class="first-section-main-mid-left">
@@ -91,22 +96,29 @@
             </div>
           </div>
           <div class="see-details">
-            <a href="#second">
-              <span>See Details</span>
-              <span class="material-icons-outlined">expand_more</span>
-            </a>
+            <span>See Details</span>
+            <span class="material-icons-outlined">expand_more</span>
           </div>
-
+          <!--          <img-->
+          <!--            src="./public/assets/ev.png"-->
+          <!--            style="-->
+          <!--              position: absolute;-->
+          <!--              left: 30%;-->
+          <!--              top: 60%;-->
+          <!--              height: 100vh;-->
+          <!--              width: 60vw;-->
+          <!--            "-->
+          <!--          />-->
         </div>
       </section>
-      <section id="second" class="section hidden">
+      <section id="second" class="section">
         <div class="container content">
           <div class="content">
             <h3 class="section2-h3">Property</h3>
             <h1 class="section2-h1">OVERVIEW</h1>
             <p
               id="first-text"
-              class="text section2-text"
+              class="text section2-text hidden-text"
               style="display: -webkit-box"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -155,30 +167,54 @@
         </div>
         <img
           id="section2-image"
-          src="public/assets/section-2.1.png"
+          src="./public/assets/section-2.1.png"
           alt="mountain view"
         />
       </section>
-      <section id="third" class="section hidden">
+      <section id="third" class="section">
         <div id="advert" class="container">
           <img
             id="section3-image"
-            src="public/assets/section-3.1.png"
+            src="./public/assets/section-3.1.png"
             alt="mountain view"
             class="desktop-slides"
           />
+          <!--          <img-->
+          <!--                  id="section3-2-image"-->
+          <!--                  src="https://picsum.photos/553/438"-->
+          <!--                  alt="mountain view"-->
+          <!--                  class="desktop-slides"-->
+          <!--          />-->
+          <!--          <img-->
+          <!--                  id="section3-3-image"-->
+          <!--                  src="https://picsum.photos/554/438"-->
+          <!--                  alt="mountain view"-->
+          <!--                  class="desktop-slides"-->
+          <!--          />-->
           <div class="content">
             <h3 class="section3-h3">Property</h3>
             <h1 class="section3-h1">Comparable Properties</h1>
             <img
               id="section3-image-mobile"
-              src="public/assets/section-3.1.png"
+              src="./public/assets/section-3.1.png"
               alt="mountain view"
               class="mobile-slides"
             />
+            <!--            <img-->
+            <!--                    id="section3-2-image-mobile"-->
+            <!--                    src="https://picsum.photos/551/438"-->
+            <!--                    alt="mountain view"-->
+            <!--                    class="mobile-slides"-->
+            <!--            />-->
+            <!--            <img-->
+            <!--                    id="section3-3-image-mobile"-->
+            <!--                    src="https://picsum.photos/552/438"-->
+            <!--                    alt="mountain view"-->
+            <!--                    class="mobile-slides"-->
+            <!--            />-->
             <p
               id="second-text"
-              class="text section3-text"
+              class="text section3-text hidden-text"
               style="display: -webkit-box"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -246,7 +282,7 @@
           </div>
         </div>
       </section>
-      <section id="fourth" class="section hidden">
+      <section id="fourth" class="section">
         <div class="container fourth-container">
           <div class="content">
             <h3 class="section3-h3">Property</h3>
@@ -256,7 +292,7 @@
             </h1>
             <p
               id="third-text"
-              class="text section3-text"
+              class="text section3-text hidden-text"
               style="-webkit-line-clamp: 11; display: -webkit-box"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -341,12 +377,12 @@
           </div>
           <img
             id="section4-image"
-            src="public/assets/section-4.1.png"
+            src="./public/assets/section-4.1.png"
             alt="mountain view"
           />
         </div>
       </section>
-      <section id="fifth" class="section hidden">
+      <section id="fifth" class="section">
         <div class="container">
           <div class="question-bg">QUESTIONS</div>
           <h3 class="section5-h3">Property</h3>
@@ -418,7 +454,7 @@
           ></iframe>
         </div>
       </section>
-      <section id="sixth" class="section hidden">
+      <section id="sixth" class="section">
         <div class="container">
           <iframe
             id="section6-image"
@@ -441,12 +477,12 @@
                 the PROCEED button below and we will contact you to make the
                 necessary arrangements.
               </p>
-              <button class="read-more-button proceed">
+              <a href="form.html" class="read-more-button proceed">
                 <span class="material-icons-outlined proceed-icon"
                   >check_circle_outline</span
                 >
                 <span>Proceed</span>
-              </button>
+              </a>
             </div>
             <div class="content-card">
               <div class="filled-circle"></div>
@@ -461,30 +497,34 @@
         </div>
       </section>
       <hr class="footer-hr" />
-      <div id="footer" class="section hidden">
+      <div id="footer" class="section">
         <div class="container">
           <div class="card-container">
-            <div class="cards footer-card">
+            <a href="tel:020 8558 9900" class="cards footer-card">
               <span class="material-icons card-icon">call</span>
               <div style="display: grid">
                 <span class="footer-card-title">Phone</span>
                 <span class="footer-card-amount">020 8558 9900</span>
               </div>
-            </div>
-            <div class="cards footer-card">
+            </a>
+            <a href="mailto:info@lifesycle.co.uk" class="cards footer-card">
               <span class="material-icons card-icon">mail</span>
               <div style="display: grid">
                 <span class="footer-card-title">Mail</span>
                 <span class="footer-card-amount">info@lifesycle.co.uk</span>
               </div>
-            </div>
-            <div class="cards footer-card">
+            </a>
+            <a
+              href="https://www.google.com/maps/place/London,+UK/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862"
+              target="_blank"
+              class="cards footer-card"
+            >
               <span class="material-icons card-icon">place</span>
               <div style="display: grid">
                 <span class="footer-card-title">Address</span>
                 <span class="footer-card-amount">London/England</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -492,8 +532,6 @@
 
     <script>
       let isHiddenSections = true;
-      let isVisibleText = false;
-      let isMobileMenu = false;
 
       function openMobileMenu() {
         const menu = document.querySelector("#mobile-menu");
@@ -502,40 +540,50 @@
         );
         const closeButton = document.querySelector("#mobile-menu > span");
         openButton.addEventListener("click", () => {
-          isMobileMenu = !isMobileMenu;
-          menu.style.display = isMobileMenu ? "block" : "none";
+          menu.style.display = "block";
         });
         closeButton.addEventListener("click", () => {
-          isMobileMenu = !isMobileMenu;
-          menu.style.display = isMobileMenu ? "block" : "none";
+          menu.style.display = "none";
         });
       }
+      window.addEventListener("resize", () => {
+        const menu = document.querySelector("#mobile-menu");
+        if (window.innerWidth > 600) {
+          menu.style.display = "none";
+        }
+      });
 
       function showSections() {
         const button = document.querySelector(".see-details");
         button.addEventListener("click", () => {
           isHiddenSections = !isHiddenSections;
-          document.querySelectorAll(".section").forEach((el) => {
-            el.setAttribute(
-              "class",
-              isHiddenSections ? "section hidden" : "section"
-            );
-          });
-          document.querySelector(".see-details > a > span").textContent =
+          document.querySelector(".see-details > span").textContent =
             isHiddenSections ? "See Details" : "Show less";
-          document.querySelector(
-            ".see-details > a > span:last-child"
-          ).textContent = isHiddenSections ? "expand_more" : "expand_less";
+          document.querySelector(".see-details > span:last-child").textContent =
+            isHiddenSections ? "expand_more" : "expand_less";
         });
       }
+
       function readMore(buttonId, textId) {
         let button = document.querySelector(`#${buttonId}`);
         let text = document.querySelector(`#${textId}`);
+        let buttonText = button.querySelector(".read-more-text");
+        let icon = button.querySelector(".visibility");
         button.addEventListener("click", () => {
           if (text.style.display === "-webkit-box") {
             text.style.display = "block";
+            buttonText.textContent = "Show less";
+            icon.textContent = "visibility_off";
+
+            text.classList.add("visible-text");
+            text.classList.remove("hidden-text");
           } else {
             text.style.display = "-webkit-box";
+            buttonText.textContent = "Read more";
+            icon.textContent = "visibility";
+
+            text.classList.add("hidden-text");
+            text.classList.remove("visible-text");
           }
         });
       }
@@ -564,9 +612,11 @@
           ul.appendChild(li);
         }
       };
-      let items = ul.getElementsByClassName("item");
-      let currentItem = document.getElementsByClassName("active");
-      const activeClass = function () {
+
+      const activeClass = function (parentId, elementClassName) {
+        const ul = document.getElementById(parentId);
+        let items = ul.getElementsByClassName(elementClassName);
+        let currentItem = ul.getElementsByClassName("active");
         for (let i = 0; i < items.length; i++) {
           items[i].addEventListener("click", function () {
             currentItem[0].className = currentItem[0].className.replace(
@@ -577,19 +627,80 @@
           });
         }
       };
+
       readMore("first-read-more-button", "first-text");
       readMore("second-read-more-button", "second-text");
       readMore("third-read-more-button", "third-text");
       showSections();
       menuCreate();
       openMobileMenu();
-      activeClass();
+      activeClass("items", "item");
+      activeClass("desktop-menu-icons", "nav");
+      formRouting();
+
+      // let slideIndex = 1;
+      // function plusDivs(n) {
+      //   showDivs(slideIndex += n);
+      // }
+      //
+      // function showDivs(n) {
+      //   let firstImg;
+      //   let images;
+      //   if (window.innerWidth < 600) {
+      //     images = document.querySelectorAll(".mobile-slides")
+      //     document.querySelectorAll(".desktop-slides").forEach(img => {
+      //       img.style.display = 'none'
+      //     })
+      //   } else {
+      //     images = document.querySelectorAll(".desktop-slides")
+      //     document.querySelectorAll(".mobile-slides").forEach(img => {
+      //       img.style.display = 'none'
+      //     })
+      //   }
+      //   console.log(images)
+      //   if (n > images.length) {slideIndex = 1}
+      //   if (n < 1) {slideIndex = images.length}
+      //   for (let i = 0; i < images.length; i++) {
+      //     images[i].style.display = "none";
+      //   }
+      //   images[slideIndex-1].style.display = "block";
+      // }
+      //
+      // document.querySelector('.bullet.bl').addEventListener('click', () => {
+      //   plusDivs(-1)
+      // })
+      // document.querySelector('.bullet.br').addEventListener('click', () => {
+      //   plusDivs(1)
+      // })
+      // window.innerWidth < 600 ?
+      //         document.querySelectorAll('.desktop-slides').forEach(img => {
+      //           img.style.display = 'none'
+      //         }) : document.querySelectorAll('.mobile-slides').forEach(img => {
+      //           img.style.display = 'none'
+      //         })
+      //
+      // window.addEventListener('resize', () => {
+      //   showDivs(slideIndex);
+      //   window.innerWidth < 600 ?
+      //     document.querySelectorAll('.desktop-slides').forEach(img => {
+      //       img.style.display = 'none'
+      //     }) : document.querySelectorAll('.mobile-slides').forEach(img => {
+      //       img.style.display = 'none'
+      //           })
+      // })
     </script>
   </body>
 
   <style>
     html {
       scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: initial;
+    }
+    a:hover {
+      opacity: 80% !important;
     }
     #mobile-menu {
       background: #0055a5;
@@ -602,6 +713,7 @@
     #mobile-menu > span {
       justify-content: start !important;
       padding: 0.5rem;
+      cursor: pointer;
     }
     #items {
       list-style: none;
@@ -632,9 +744,8 @@
     .hidden {
       display: none !important;
     }
-    .see-details > a {
-      text-decoration: none;
-      color: inherit;
+    .visible {
+      display: block !important;
     }
     @font-face {
       src: url(public/fonts/static/Rubik-Regular.ttf) format("truetype");
@@ -672,7 +783,7 @@
     #first {
       display: grid;
       grid-template-columns: auto 1fr;
-      background-image: url("public/assets/section-1.1.png");
+      background-image: url("./public/assets/section-1.1.png");
       background-size: cover;
       min-height: 100vh;
       width: 100%;
@@ -747,7 +858,7 @@
         height: 100% !important;
         align-content: space-evenly;
       }
-      .see-details > a > span:first-child {
+      .see-details > span:first-child {
         font-size: 1.2rem !important;
         line-height: 1.2rem !important;
       }
@@ -759,6 +870,12 @@
         grid-template-columns: 1fr !important;
         grid-gap: 0 !important;
       }
+      /*.desktop-slides {*/
+      /*  display: none !important;*/
+      /*}*/
+      /*.mobile-slides {*/
+      /*  display: none !important;*/
+      /*}*/
       #pdf-container {
         grid-row: 3;
         margin-top: 1rem !important;
@@ -766,6 +883,7 @@
       .external-price-link {
         font-size: 0.8rem !important;
         line-height: 3rem !important;
+        text-decoration: underline !important;
       }
       .section3-text {
         padding-top: 2rem !important;
@@ -787,6 +905,8 @@
       .card-container {
         padding: 1rem 0 !important;
         width: 100% !important;
+        max-height: unset !important;
+        min-width: unset !important;
       }
       .cards {
         padding: 3vh 4vw !important;
@@ -896,6 +1016,7 @@
         grid-row-gap: 4vh !important;
       }
       .footer-card {
+        /*grid-gap: 2px !important;*/
         padding: 0 !important;
       }
       .footer-card > .card-icon {
@@ -918,6 +1039,7 @@
       padding-top: 2rem;
     }
     .menu-icons {
+      /*padding-top: 3rem;*/
       display: grid;
       grid-template-columns: 1fr;
       align-items: center;
@@ -1077,13 +1199,13 @@
       display: grid;
       justify-content: center;
     }
-    .see-details > a > span:first-child {
+    .see-details > span:first-child {
       font-family: rubik-regular, sans-serif;
       font-size: 0.8rem;
       line-height: 0.8rem;
       color: #000000;
     }
-    .see-details > a > span:last-child {
+    .see-details > span:last-child {
       color: #2e2b2b;
       width: auto;
     }
@@ -1111,6 +1233,16 @@
       color: #6c6c6c;
       font-family: rubik-regular, sans-serif;
     }
+    .hidden-text {
+      background: -webkit-linear-gradient(#333, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .visible-text {
+      display: block;
+      background: transparent;
+      -webkit-text-fill-color: unset;
+    }
     .section2-text {
       line-height: 1.5rem;
       font-size: 1rem;
@@ -1135,11 +1267,7 @@
       font-size: 12px;
       gap: 10px;
       padding: 1rem 2rem;
-      display: inline-flex;
-      align-self: center;
-      justify-self: center;
-      justify-content: center;
-      justify-items: center;
+      display: flex;
       border: 1px solid #707070;
       border-radius: 34px;
       margin: 1rem auto 2rem;
@@ -1261,7 +1389,9 @@
     }
     .card-container {
       height: 80%;
+      max-height: 50vh;
       width: 100%;
+      min-width: 20vw;
       background: rgba(199, 199, 199, 0.09);
       border-radius: 9px;
       display: grid;
@@ -1467,6 +1597,7 @@
       padding: 2rem 0 3rem 0;
     }
     .proceed {
+      display: inline-flex;
       background: #ffffff;
       border-radius: 60px;
       padding: 0.8rem 2rem;
