@@ -7,12 +7,6 @@
       content="width=device-width, initial-scale=1"
     />
     <title>UI Challenge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -24,24 +18,29 @@
   </head>
   <body>
     <div id="app">
-      <section id="first" class="section">
+      <div id="mobile-menu" style="display: none">
+        <span class="material-icons">close</span>
+        <ul id="items"></ul>
+      </div>
+      <section id="first">
         <div id="first-section-menu">
           <span class="material-icons open-menu">play_circle</span>
           <div class="menu-icons">
-            <div class="icon-border">
-              <span class="material-icons nav active">home</span>
-            </div>
-            <span class="material-icons nav">home</span>
-            <span class="material-icons nav">home</span>
-            <span class="material-icons nav">home</span>
-            <span class="material-icons nav">home</span>
-            <span class="material-icons nav">home</span>
-            <span class="material-icons nav">home</span>
+            <span class="material-icons nav active">house</span>
+            <span class="material-icons nav">note_alt</span>
+            <span class="material-icons nav">where_to_vote</span>
+            <span class="material-icons nav">sell</span>
+            <span class="material-icons nav">saved_search</span>
+            <span class="material-icons nav">help</span>
+            <span class="material-icons nav">room</span>
           </div>
         </div>
-        <div id="first-section-main" class="container">
+        <div id="first-section-main" class="container-1">
           <div class="first-section-main-header">
-            <div></div>
+            <div id="#burger">
+              <div class="burger b-top"></div>
+              <div class="burger b-bottom"></div>
+            </div>
             <div class="phone">
               <span class="material-icons call">call</span>
               <span>020 8558 9900</span>
@@ -63,19 +62,13 @@
               </p>
             </div>
             <div class="first-section-main-mid-right">
-              <div class="card card-top-left" style="padding-top: 3rem">
+              <div class="card card-top-left">
                 <span class="material-icons-outlined card-head"
                   >event_available</span
                 >
-                <p
-                  class="card-main"
-                  style="margin-bottom: 1em; font-size: 16px; line-height: 15px"
-                >
-                  Valuation Date
-                </p>
+                <p class="card-main">Valuation Date</p>
                 <p class="card-footer">24 June 2019</p>
               </div>
-              <!--<div class="vl vl-top"></div>-->
               <div class="card card-top-right">
                 <span
                   class="material-icons card-head"
@@ -83,49 +76,581 @@
                   >hotel</span
                 >
                 <p class="card-main" style="color: #ffffff">Bedrooms</p>
-                <br />
-                <p
-                  class="card-footer"
-                  style="font-size: 28px; line-height: 16px; color: #ffffff"
-                >
-                  2
-                </p>
+                <p class="card-footer" style="color: #ffffff">2</p>
               </div>
-
-              <!--              <div class="hr hr-left"></div>-->
-              <!--              <div class="hr"></div>-->
-              <!--              <div class="hr hr-right"></div>-->
               <div class="card card-bottom-left">
-                <span class="material-icons card-head" style="margin-top: 1em"
-                  >chair</span
-                >
+                <span class="material-icons card-head">chair</span>
                 <p class="card-main">Receptions</p>
-                <br />
                 <p class="card-footer">1</p>
               </div>
-              <!--<div class="vl vl-bottom"></div>-->
               <div class="card card-bottom-right">
-                <span class="material-icons card-head" style="margin-top: 1em"
-                  >bathtub</span
-                >
+                <span class="material-icons card-head">bathtub</span>
                 <p class="card-main">Bathrooms</p>
-                <br />
                 <p class="card-footer">3</p>
               </div>
             </div>
           </div>
           <div class="see-details">
-            <span>See Details</span>
-            <span class="material-icons-outlined">expand_more</span>
+            <a href="#second">
+              <span>See Details</span>
+              <span class="material-icons-outlined">expand_more</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <section id="second" class="section hidden">
+        <div class="container content">
+          <div class="content">
+            <h3 class="section2-h3">Property</h3>
+            <h1 class="section2-h1">OVERVIEW</h1>
+            <p
+              id="first-text"
+              class="text section2-text"
+              style="display: -webkit-box"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum laoreet non leo et imperdiet. Morbi sed dictum diam.
+              Cras nisi justo, malesuada et placerat ac, rutrum sed nibh.
+              Maecenas sed magna a nisl vehicula vehicula nec quis augue.
+              Maecenas et posuere lacus. Sed scelerisque iaculis ex quis
+              imperdiet. Nunc molestie elit et augue viverra, at iaculis quam
+              consequat. Curabitur volutpat malesuada nulla. Etiam placerat,
+              lectus at mollis vulputate, massa ante rhoncus ligula, quis
+              pretium odio neque quis justo. Sed a tempor urna. Aenean a turpis
+              posuere, rhoncus arcu vitae, venenatis orci. Curabitur id tellus
+              sed odio convallis dapibus pulvinar tristique ligula. Integer et
+              nisi commodo, pretium ex vitae, pellentesque risus. Nullam ut
+              mauris vestibulum, vestibulum nibh vel, pharetra nunc. Cras at
+              luctus est, quis mollis quam. Donec lobortis mollis mauris at
+              convallis. Vestibulum mattis, lorem a tincidunt malesuada, magna
+              ipsum pellentesque erat, eget mattis libero tellus nec nulla.
+              Suspendisse potenti. Maecenas accumsan condimentum condimentum.
+              Fusce et felis cursus, tempor tellus sed, convallis est. Praesent
+              turpis ante, consequat nec nulla ut, vestibulum dignissim lorem.
+              Duis efficitur rhoncus massa, in fermentum arcu commodo ut.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Nullam non pharetra libero. Ut lobortis lorem sed nulla mollis
+              scelerisque. Duis tempus ligula libero, non laoreet arcu venenatis
+              quis. Maecenas mauris leo, hendrerit mattis volutpat eu,
+              condimentum nec est. Morbi non augue euismod, venenatis ante
+              malesuada, dignissim est. Quisque lectus lectus, vehicula vel est
+              sed, dictum lobortis lacus. Donec at mauris lectus. Pellentesque
+              scelerisque posuere suscipit. Maecenas ac facilisis urna. Nunc
+              cursus quam leo, sed cursus eros dignissim ac. Ut sit amet
+              pellentesque nunc. Phasellus et ipsum sit amet ligula accumsan
+              congue. Proin placerat risus et lectus sodales, vel semper eros
+              aliquet. Nulla consequat, ipsum eget volutpat eleifend, justo
+              lorem vulputate elit, quis vestibulum justo eros vehicula nisl.
+              Praesent eget odio ut purus pulvinar tincidunt a fringilla enim.
+              Donec venenatis hendrerit ligula non accumsan. Morbi accumsan
+              finibus lectus, ut porta lorem faucibus a. Praesent faucibus
+              sodales elit, ut tempus odio dignissim ac.
+            </p>
+            <button id="first-read-more-button" class="read-more-button">
+              <span class="read-more-text">Read more</span>
+              <span class="material-icons visibility">visibility</span>
+            </button>
+          </div>
+        </div>
+        <img
+          id="section2-image"
+          src="public/assets/section-2.1.png"
+          alt="mountain view"
+        />
+      </section>
+      <section id="third" class="section hidden">
+        <div id="advert" class="container">
+          <img
+            id="section3-image"
+            src="public/assets/section-3.1.png"
+            alt="mountain view"
+            class="desktop-slides"
+          />
+          <div class="content">
+            <h3 class="section3-h3">Property</h3>
+            <h1 class="section3-h1">Comparable Properties</h1>
+            <img
+              id="section3-image-mobile"
+              src="public/assets/section-3.1.png"
+              alt="mountain view"
+              class="mobile-slides"
+            />
+            <p
+              id="second-text"
+              class="text section3-text"
+              style="display: -webkit-box"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry.
+            </p>
+            <button id="second-read-more-button" class="read-more-button">
+              <span class="read-more-text">Read more</span>
+              <span class="material-icons visibility">visibility</span>
+            </button>
+          </div>
+          <div id="pdf-container">
+            <div
+              style="
+                height: 50px;
+                width: 50px;
+                background: #ffffff;
+                border-radius: 50%;
+                align-items: center;
+                display: grid;
+              "
+            >
+              <span class="material-icons-outlined" style="color: #f46f70"
+                >insert_drive_file</span
+              >
+            </div>
+            <span class="pdf-document-text">Pdf Document Link</span>
+            <div
+              style="
+                height: 30px;
+                width: 30px;
+                background: #de4a4b;
+                border-radius: 50%;
+                align-items: center;
+                display: grid;
+              "
+            >
+              <span class="material-icons">south</span>
+            </div>
+          </div>
+          <div>
+            <p class="price">£425,000</p>
+            <a
+              class="external-price-link"
+              href="http://babacanoglu.presentation.test-aws.lifesycle.co.uk/"
+              target="_blank"
+              >http://babacanoglu.presentation.test-aws.lifesycle.co.uk/</a
+            >
+          </div>
+        </div>
+        <div id="navigate-bullets">
+          <div class="bullet bl">
+            <span class="material-icons navigate-left"> west </span>
+          </div>
+          <div class="bullet br">
+            <span class="material-icons navigate-right"> east </span>
           </div>
         </div>
       </section>
+      <section id="fourth" class="section hidden">
+        <div class="container fourth-container">
+          <div class="content">
+            <h3 class="section3-h3">Property</h3>
+            <h1 class="section3-h1">
+              Marketing <br />
+              Plan & Price
+            </h1>
+            <p
+              id="third-text"
+              class="text section3-text"
+              style="-webkit-line-clamp: 11; display: -webkit-box"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum laoreet non leo et imperdiet. Morbi sed dictum diam.
+              Cras nisi justo, malesuada et placerat ac, rutrum sed nibh.
+              Maecenas sed magna a nisl vehicula vehicula nec quis augue.
+              Maecenas et posuere lacus. Sed scelerisque iaculis ex quis
+              imperdiet. Nunc molestie elit et augue viverra, at iaculis quam
+              consequat. Curabitur volutpat malesuada nulla. Etiam placerat,
+              lectus at mollis vulputate, massa ante rhoncus ligula, quis
+              pretium odio neque quis justo. Sed a tempor urna. Aenean a turpis
+              posuere, rhoncus arcu vitae, venenatis orci. Curabitur id tellus
+              sed odio convallis dapibus pulvinar tristique ligula. Integer et
+              nisi commodo, pretium ex vitae, pellentesque risus. Nullam ut
+              mauris vestibulum, vestibulum nibh vel, pharetra nunc. Cras at
+              luctus est, quis mollis quam. Donec lobortis mollis mauris at
+              convallis. Vestibulum mattis, lorem a tincidunt malesuada, magna
+              ipsum pellentesque erat, eget mattis libero tellus nec nulla.
+              Suspendisse potenti. Maecenas accumsan condimentum condimentum.
+              Fusce et felis cursus, tempor tellus sed, convallis est. Praesent
+              turpis ante, consequat nec nulla ut, vestibulum dignissim lorem.
+              Duis efficitur rhoncus massa, in fermentum arcu commodo ut.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Nullam non pharetra libero. Ut lobortis lorem sed nulla mollis
+              scelerisque. Duis tempus ligula libero, non laoreet arcu venenatis
+              quis. Maecenas mauris leo, hendrerit mattis volutpat eu,
+              condimentum nec est. Morbi non augue euismod, venenatis ante
+              malesuada, dignissim est. Quisque lectus lectus, vehicula vel est
+              sed, dictum lobortis lacus. Donec at mauris lectus. Pellentesque
+              scelerisque posuere suscipit. Maecenas ac facilisis urna. Nunc
+              cursus quam leo, sed cursus eros dignissim ac. Ut sit amet
+              pellentesque nunc. Phasellus et ipsum sit amet ligula accumsan
+              congue. Proin placerat risus et lectus sodales, vel semper eros
+              aliquet. Nulla consequat, ipsum eget volutpat eleifend, justo
+              lorem vulputate elit, quis vestibulum justo eros vehicula nisl.
+              Praesent eget odio ut purus pulvinar tincidunt a fringilla enim.
+              Donec venenatis hendrerit ligula non accumsan. Morbi accumsan
+              finibus lectus, ut porta lorem faucibus a. Praesent faucibus
+              sodales elit, ut tempus odio dignissim ac.
+            </p>
+            <button id="third-read-more-button" class="read-more-button">
+              <span class="read-more-text">Read more</span>
+              <span class="material-icons visibility">visibility</span>
+            </button>
+          </div>
+          <div class="card-container">
+            <div class="cards first-card">
+              <div class="card-icon-circle">
+                <span class="material-icons card-icon" style="color: #0055a5"
+                  >sell</span
+                >
+              </div>
+              <div style="display: grid">
+                <span class="card-title" style="color: #ffffff">Minimum</span>
+                <span class="card-amount" style="color: #ffffff"
+                  >£ 1,450,000</span
+                >
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card-icon-circle">
+                <span class="material-icons card-icon" style="color: #ffffff"
+                  >sell</span
+                >
+              </div>
+              <div style="display: grid">
+                <span class="card-title">AVG</span>
+                <span class="card-amount">£ 1,500,000</span>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card-icon-circle">
+                <span class="material-icons card-icon" style="color: #ffffff"
+                  >sell</span
+                >
+              </div>
+              <div style="display: grid">
+                <span class="card-title">Maximum</span>
+                <span class="card-amount">£ 1,550,000</span>
+              </div>
+            </div>
+          </div>
+          <img
+            id="section4-image"
+            src="public/assets/section-4.1.png"
+            alt="mountain view"
+          />
+        </div>
+      </section>
+      <section id="fifth" class="section hidden">
+        <div class="container">
+          <div class="question-bg">QUESTIONS</div>
+          <h3 class="section5-h3">Property</h3>
+          <h1 class="section5-h1">
+            Frequently Asked <br />
+            Questions
+          </h1>
+        </div>
+        <hr class="section5-hr" />
+        <div class="card-container section5-card-container">
+          <div class="container">
+            <div class="section5 cards">
+              <div class="card-icon-circle">
+                <span class="card-icon section5-card-icon">1</span>
+              </div>
+              <span class="section5-card-title"
+                >I Want to use you but another agent has quoted me a cheaper
+                fee. What shall I do?</span
+              >
+              <span class="text section5-card-amount"
+                >You may find a cheaper fee elsewhere, but we believe we are
+                offering a better service and better value than any of our
+                competitors. We are currently rated in the top 10 of all agents
+                in the UK for customer service on www.allAgents.co.uk and in
+                2016 won the award for Best Small Chain in the UK. Our fee also
+                includes professional photography and floorplan as
+                standard.</span
+              >
+            </div>
+          </div>
+          <hr class="section5-hr" />
+          <div class="container">
+            <div class="section5 cards">
+              <div class="card-icon-circle second-circle">
+                <span class="card-icon section5-card-icon">2</span>
+              </div>
+
+              <span class="section5-card-title"
+                >I Want to sell but I was expecting higher valuations. What are
+                the options?</span
+              >
+              <span class="text section5-card-amount"
+                >Valuations are subjective, they’re not an exact science, and so
+                it is natural that opinions will differ. When valuing, our job
+                is to give you an evidence-based estimate of the valuation range
+                but if you want your property marketed at above, or below, our
+                valuation range you just need to tell us - you’re the
+                boss!</span
+              >
+            </div>
+          </div>
+        </div>
+        <hr class="section5-hr" />
+        <div class="container" style="justify-content: start">
+          <button class="read-more-button section5-btn">
+            <span class="read-more-text">Ask A Question</span>
+            <span class="material-icons-outlined visibility">help_outline</span>
+          </button>
+        </div>
+        <div class="container">
+          <iframe
+            id="section5-image"
+            style="display: none"
+            src="https://www.youtube.com/embed/idJthveed1M"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="sixth" class="section hidden">
+        <div class="container">
+          <iframe
+            id="section6-image"
+            src="https://www.youtube.com/embed/idJthveed1M"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="buttons">
+            <button>Reviews</button>
+            <button>Lifesycle TV Video</button>
+          </div>
+          <div class="next-step-grid">
+            <div class="content">
+              <h3 class="section6-h3">Property</h3>
+              <h1 class="section6-h1">Next Steps</h1>
+              <p class="text section6-text">
+                If you would like Outlook to market your property simply click
+                the PROCEED button below and we will contact you to make the
+                necessary arrangements.
+              </p>
+              <button class="read-more-button proceed">
+                <span class="material-icons-outlined proceed-icon"
+                  >check_circle_outline</span
+                >
+                <span>Proceed</span>
+              </button>
+            </div>
+            <div class="content-card">
+              <div class="filled-circle"></div>
+              <p><b>Length Of Agreement:</b> 4</p>
+              <p>
+                <b>Plan Of Action:</b> Our fee is inclusive of TV style video,
+                professional photography, floorplan and EPC.
+              </p>
+              <p><b>Fee Quote: </b>0.75% + VAT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="footer-hr" />
+      <div id="footer" class="section hidden">
+        <div class="container">
+          <div class="card-container">
+            <div class="cards footer-card">
+              <span class="material-icons card-icon">call</span>
+              <div style="display: grid">
+                <span class="footer-card-title">Phone</span>
+                <span class="footer-card-amount">020 8558 9900</span>
+              </div>
+            </div>
+            <div class="cards footer-card">
+              <span class="material-icons card-icon">mail</span>
+              <div style="display: grid">
+                <span class="footer-card-title">Mail</span>
+                <span class="footer-card-amount">info@lifesycle.co.uk</span>
+              </div>
+            </div>
+            <div class="cards footer-card">
+              <span class="material-icons card-icon">place</span>
+              <div style="display: grid">
+                <span class="footer-card-title">Address</span>
+                <span class="footer-card-amount">London/England</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script></script>
+    <script>
+      let isHiddenSections = true;
+      let isVisibleText = false;
+      let isMobileMenu = false;
+
+      function openMobileMenu() {
+        const menu = document.querySelector("#mobile-menu");
+        const openButton = document.querySelector(
+          ".first-section-main-header > div"
+        );
+        const closeButton = document.querySelector("#mobile-menu > span");
+        openButton.addEventListener("click", () => {
+          isMobileMenu = !isMobileMenu;
+          menu.style.display = isMobileMenu ? "block" : "none";
+        });
+        closeButton.addEventListener("click", () => {
+          isMobileMenu = !isMobileMenu;
+          menu.style.display = isMobileMenu ? "block" : "none";
+        });
+      }
+
+      function showSections() {
+        const button = document.querySelector(".see-details");
+        button.addEventListener("click", () => {
+          isHiddenSections = !isHiddenSections;
+          document.querySelectorAll(".section").forEach((el) => {
+            el.setAttribute(
+              "class",
+              isHiddenSections ? "section hidden" : "section"
+            );
+          });
+          document.querySelector(".see-details > a > span").textContent =
+            isHiddenSections ? "See Details" : "Show less";
+          document.querySelector(
+            ".see-details > a > span:last-child"
+          ).textContent = isHiddenSections ? "expand_more" : "expand_less";
+        });
+      }
+      function readMore(buttonId, textId) {
+        let button = document.querySelector(`#${buttonId}`);
+        let text = document.querySelector(`#${textId}`);
+        button.addEventListener("click", () => {
+          if (text.style.display === "-webkit-box") {
+            text.style.display = "block";
+          } else {
+            text.style.display = "-webkit-box";
+          }
+        });
+      }
+
+      const menuLinkTitles = [
+        "Home",
+        "About",
+        "Key selling point",
+        "Comparable Properties",
+        "Marketing Price",
+        "Marketing Plan",
+        "Faq",
+        "Next Steps",
+      ];
+      const ul = document.getElementById("items");
+      const menuCreate = function () {
+        for (let linkTitle of menuLinkTitles) {
+          const li = document.createElement("li");
+          li.innerHTML = `<span class="material-icons">circle</span>
+                            ${linkTitle}
+`;
+          li.className =
+            document.getElementsByClassName("item").length < 1
+              ? "item active"
+              : "item";
+          ul.appendChild(li);
+        }
+      };
+      let items = ul.getElementsByClassName("item");
+      let currentItem = document.getElementsByClassName("active");
+      const activeClass = function () {
+        for (let i = 0; i < items.length; i++) {
+          items[i].addEventListener("click", function () {
+            currentItem[0].className = currentItem[0].className.replace(
+              " active",
+              ""
+            );
+            this.className += " active";
+          });
+        }
+      };
+      readMore("first-read-more-button", "first-text");
+      readMore("second-read-more-button", "second-text");
+      readMore("third-read-more-button", "third-text");
+      showSections();
+      menuCreate();
+      openMobileMenu();
+      activeClass();
+    </script>
   </body>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    #mobile-menu {
+      background: #0055a5;
+      padding: 1rem;
+      display: grid;
+      grid-template-rows: 1fr 8fr;
+      height: 100vh;
+      transition: all 1s;
+    }
+    #mobile-menu > span {
+      justify-content: start !important;
+      padding: 0.5rem;
+    }
+    #items {
+      list-style: none;
+    }
+    .item {
+      border-radius: 16px;
+      padding: 1rem;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 2vw;
+      align-items: center;
+      font-family: ProximaNova-Light, sans-serif !important;
+      font-size: 1.5rem;
+      font-weight: lighter;
+      line-height: 2rem;
+      color: #ffffff;
+    }
+    .item.active {
+      background: #02417c;
+    }
+    .active > span {
+      color: #fef200;
+    }
+    li > span {
+      font-size: 0.9rem !important;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .see-details > a {
+      text-decoration: none;
+      color: inherit;
+    }
+    @font-face {
+      src: url(public/fonts/static/Rubik-Regular.ttf) format("truetype");
+      font-family: rubik-regular;
+      font-display: swap;
+    }
+    @font-face {
+      src: url(public/fonts/static/Rubik-Medium.ttf) format("truetype");
+      font-family: rubik-medium;
+      font-display: swap;
+    }
+    @font-face {
+      src: url(public/fonts/static/Rubik-Bold.ttf) format("truetype");
+      font-family: rubik-bold;
+      font-display: swap;
+    }
     * {
       margin: 0;
       padding: 0;
@@ -136,43 +661,275 @@
       display: inline-block;
       width: 100%;
     }
-    .section {
-      min-height: 100%;
+    .container-1 {
+      display: grid;
+      padding: 1vh 13vw;
     }
     .container {
-      padding: 0 12%;
-    }
-    img {
-      width: 100%;
+      display: grid;
+      padding: 0 20vw;
     }
     #first {
       display: grid;
       grid-template-columns: auto 1fr;
-      background-image: url("https://i.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o");
+      background-image: url("public/assets/section-1.1.png");
+      background-size: cover;
       min-height: 100vh;
       width: 100%;
+    }
+    .burger {
+      display: none;
+      background: #000000;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .b-top {
+      height: 3px;
+      width: 28px;
+      margin-bottom: 9px;
+    }
+    .b-bottom {
+      height: 3px;
+      width: 16px;
+    }
+    @media screen and (max-width: 600px) {
+      .container-1 {
+        padding: 2vh 4vw !important;
+      }
+      .container {
+        padding: 2vh 4vw !important;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+      }
+      .section {
+        text-align: left;
+      }
+      #first {
+        grid-template-columns: 1fr;
+        padding-bottom: 10vh;
+      }
+      #first-section-main {
+        grid-template-rows: auto 1fr !important;
+        grid-gap: 4vh;
+      }
+      #first-section-menu {
+        display: none;
+      }
+      .burger {
+        display: flex;
+      }
+      .phone {
+        border: 1px solid #626262 !important;
+      }
+      .call {
+        border: none !important;
+      }
+      .location-hr {
+        margin-bottom: 2vh;
+      }
+      .section1-location {
+        font-size: 2.5rem !important;
+      }
+      .dotted {
+        width: 100% !important;
+        border: 1px dashed #707070 !important;
+      }
+      .section1-address {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+      }
+      .first-section-main-mid {
+        grid-template-columns: 1fr !important;
+        grid-gap: 1rem !important;
+      }
+      .first-section-main-mid-right {
+        height: 100% !important;
+        align-content: space-evenly;
+      }
+      .see-details > a > span:first-child {
+        font-size: 1.2rem !important;
+        line-height: 1.2rem !important;
+      }
+      #third {
+        grid-template-rows: 1fr auto !important;
+        padding: 2rem 0 !important;
+      }
+      #advert {
+        grid-template-columns: 1fr !important;
+        grid-gap: 0 !important;
+      }
+      #pdf-container {
+        grid-row: 3;
+        margin-top: 1rem !important;
+      }
+      .external-price-link {
+        font-size: 0.8rem !important;
+        line-height: 3rem !important;
+      }
+      .section3-text {
+        padding-top: 2rem !important;
+      }
+      .bullet {
+        height: 3rem !important;
+        width: 3rem !important;
+      }
+      #fourth {
+        padding: 0 !important;
+      }
+      #fourth > .container {
+        display: inline-block !important;
+      }
+      #section4-image {
+        height: 30vh;
+        margin: 1rem 0 !important;
+      }
+      .card-container {
+        padding: 1rem 0 !important;
+        width: 100% !important;
+      }
+      .cards {
+        padding: 3vh 4vw !important;
+      }
+      .question-bg {
+        font-size: 15vw !important;
+        line-height: 2rem !important;
+        align-self: end !important;
+        justify-self: center !important;
+        width: 80% !important;
+      }
+      .section5-h3 {
+        font-size: 0.8rem !important;
+        line-height: 1.1rem !important;
+        padding: 0 !important;
+      }
+      .section5-h1 {
+        font-size: 1.7rem !important;
+        line-height: 2rem !important;
+        padding: 0.5rem 0 !important;
+      }
+      .section5 > .card-icon-circle,
+      .section5 > .second-circle {
+        grid-row: 1 !important;
+        align-self: start;
+      }
+      .section5 > .card-icon-circle {
+        height: 41px !important;
+        width: 41px !important;
+      }
+      .section5 > .second-circle {
+        background: #ffffff !important;
+      }
+      .section5-card-icon {
+        font-size: 17px !important;
+        line-height: 19px !important;
+      }
+      .section5-card-title,
+      .section5-card-amount {
+        font-size: 1rem !important;
+        line-height: 1.2rem !important;
+      }
+      .section5-card-amount {
+        grid-column: 1 / span 2 !important;
+        -webkit-line-clamp: inherit !important;
+      }
+      .section5-hr {
+        width: 100% !important;
+      }
+      .section5-btn {
+        margin: 0 !important;
+      }
+      #section5-image {
+        display: inherit !important;
+        width: 100%;
+        height: 40vh;
+        border-radius: 8px;
+        padding: 1.5rem 0;
+      }
+      #section6-image {
+        display: none !important;
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+      }
+      .buttons > button {
+        padding: 0.8rem 1.6rem !important;
+        margin: unset !important;
+      }
+      #sixth {
+        padding: 5vh 0 0 0 !important;
+      }
+      .next-step-grid {
+        grid-template-rows: auto auto !important;
+        grid-template-columns: 1fr !important;
+        padding: 5vh 0 0 0 !important;
+      }
+      .section6-h1 {
+        font-size: 1.5rem !important;
+        line-height: 1.5rem !important;
+        padding: 0.5rem 0 !important;
+      }
+      .section6-text {
+        line-height: 1.5rem !important;
+        padding: 1rem 0 1.5rem 0 !important;
+      }
+      .content-card {
+        grid-row: 1;
+        padding-bottom: 4vh !important;
+        margin: 2rem 0;
+      }
+      .content-card > .filled-circle {
+        height: 0.8rem !important;
+        width: 0.8rem !important;
+      }
+      .proceed-icon {
+        font-size: 1.5rem !important;
+      }
+      #footer {
+        padding: 0 0 1vh 0 !important;
+      }
+      #footer > .container > .card-container {
+        grid-template-columns: auto auto !important;
+        grid-column-gap: 5px !important;
+        grid-row-gap: 4vh !important;
+      }
+      .footer-card {
+        padding: 0 !important;
+      }
+      .footer-card > .card-icon {
+        font-size: 2rem !important;
+      }
+      .footer-card-title {
+        font-size: 0.8rem !important;
+        line-height: 0.8rem !important;
+      }
+      .footer-card-amount {
+        font-size: 0.8rem !important;
+        line-height: 0.8rem !important;
+      }
     }
 
     #first-section-menu {
       background: #0055a5;
-      width: 100px;
+      width: 6rem;
       min-height: 100vh;
       padding-top: 2rem;
     }
     .menu-icons {
-      padding-top: 3rem;
       display: grid;
       grid-template-columns: 1fr;
       align-items: center;
       justify-content: center;
-      grid-gap: 3vh;
+      grid-gap: 1.5rem;
     }
     .nav {
       grid-gap: 25px;
       background: transparent;
       border: 1px solid #b5b5b5;
       cursor: pointer;
-      padding: 16px 22px;
+      padding: 0.6rem 0.8rem;
       margin: auto;
       border-radius: 4px;
     }
@@ -191,12 +948,9 @@
       justify-content: center;
       align-self: center;
     }
-    .icon-border {
-      width: auto;
-      margin: auto;
-    }
     .open-menu {
       font-size: 4rem;
+      padding-bottom: 10vh;
       color: #ffffff;
     }
     #first-section-main {
@@ -209,15 +963,14 @@
       grid-template-columns: auto 1fr;
       justify-items: end;
       align-items: center;
+      padding-top: 1rem;
     }
     .phone {
-      height: 50px;
-      width: 27%;
       border: 1px solid #c9c9c9;
       display: grid;
-      grid-template-columns: 1fr 3fr;
-      text-align: left;
+      grid-template-columns: 1fr 4fr;
       align-items: center;
+      justify-content: center;
       border-radius: 34px;
     }
     .call {
@@ -225,21 +978,21 @@
       color: #ffffff;
       border: 1px solid #707070;
       border-radius: 50%;
-      /*height: 100%;*/
-      width: 49px;
-      height: 49px;
+      height: 100%;
+      font-size: unset;
     }
     .phone > span:last-child {
-      font-size: 22px;
-      line-height: 27px;
+      font-family: rubik-regular, sans-serif;
       color: #000000;
+      font-size: 0.8rem;
+      padding: 0.6rem 1.2rem 0.6rem 0.4rem;
     }
     .first-section-main-mid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: space-evenly;
       align-items: center;
-      grid-gap: 3em;
+      grid-gap: 3rem;
     }
     .first-section-main-mid-left {
       display: grid;
@@ -257,14 +1010,14 @@
       align-items: center;
     }
     .dotted {
-      border: 1px dotted #535353;
+      border: 1px dashed #535353;
       opacity: 93%;
       gap: 5px;
     }
     .section1-address {
-      font-size: 52px;
-      line-height: 73px;
-      font-weight: bold;
+      font-size: 3rem;
+      line-height: 4rem;
+      font-family: rubik-bold, sans-serif;
       color: #2e2b2b;
       text-align: left;
     }
@@ -278,11 +1031,11 @@
       border-radius: 11px;
       height: 80%;
       width: 100%;
-      padding: 1em;
+      padding: 1rem;
     }
     .card {
-      display: block;
-      align-content: end;
+      display: grid;
+      align-content: space-evenly;
       text-align: center;
       height: 100%;
       width: 100%;
@@ -290,34 +1043,26 @@
     .card-head {
       color: #2e2b2b;
       font-size: 2rem;
-      margin-top: 1em;
     }
     .card-main {
-      font-size: 19px;
-      line-height: 18px;
-      margin-top: 1rem;
+      font-family: rubik-regular, sans-serif;
+      font-size: 1rem;
+      line-height: 1rem;
     }
     .card-footer {
-      font-size: 28px;
-      line-height: 22px;
+      font-family: rubik-medium, sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: #2e2b2b;
     }
     .card-top-left {
       border-right: 1px dashed #707070;
       border-bottom: 1px dashed #707070;
     }
-    .vl {
-      height: 100%;
-      border: 1px dotted #707070;
-    }
-    .hr {
-      width: 100%;
-      border: 1px dotted #707070;
-      font-size: 0;
-    }
     .card-top-right {
       background: #0055a5;
       border-radius: 4px;
-      margin: 0 0 4em 2em;
+      margin: 0 0 30% 15%;
     }
     .card-bottom-right {
       border-top: 1px dashed #707070;
@@ -332,25 +1077,467 @@
       display: grid;
       justify-content: center;
     }
-    .see-details > span:first-child {
-      font-size: 16px;
-      line-height: 15px;
+    .see-details > a > span:first-child {
+      font-family: rubik-regular, sans-serif;
+      font-size: 0.8rem;
+      line-height: 0.8rem;
       color: #000000;
     }
-    .see-details > span:last-child {
+    .see-details > a > span:last-child {
       color: #2e2b2b;
       width: auto;
     }
-
+    .section2-h3 {
+      font-family: rubik-regular, sans-serif;
+      font-size: 1rem;
+      color: #adadad;
+      line-height: 1rem;
+      margin-top: 1rem;
+    }
+    .section2-h1 {
+      font-family: rubik-medium, sans-serif;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: #535353;
+      margin: 1rem 0 2rem 0;
+    }
+    .text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      text-align: left;
+      color: #6c6c6c;
+      font-family: rubik-regular, sans-serif;
+    }
+    .section2-text {
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
     button {
       cursor: pointer;
       background: transparent;
       border-radius: 34px;
     }
+    button:hover {
+      opacity: 80%;
+    }
+    .bullet:hover {
+      opacity: 80%;
+    }
     button > span {
+      font-size: 0.9rem;
+      line-height: 0.9rem;
+      color: #777777;
+    }
+    .read-more-button {
+      font-size: 12px;
+      gap: 10px;
+      padding: 1rem 2rem;
+      display: inline-flex;
+      align-self: center;
+      justify-self: center;
+      justify-content: center;
+      justify-items: center;
+      border: 1px solid #707070;
+      border-radius: 34px;
+      margin: 1rem auto 2rem;
+    }
+
+    .read-more-text {
       font-size: 17px;
       line-height: 16px;
+      font-family: rubik-regular, sans-serif;
       color: #777777;
+    }
+    .visibility {
+      color: #777777;
+      font-size: 14px;
+    }
+    #section2-image {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      padding-top: 1rem;
+      width: 100%;
+    }
+    #pdf-container {
+      background: #dddddd;
+      border-radius: 9px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      padding: 8px 16px;
+      align-items: center;
+      width: 100%;
+      cursor: pointer;
+    }
+    .pdf-document-text {
+      padding-left: 1rem;
+      font-size: unset;
+      font-family: rubik-regular, sans-serif;
+      text-align: left;
+      color: #000000;
+    }
+    #third {
+      display: grid;
+      grid-template-rows: 4fr 1fr;
+      padding: 2rem 0 2rem 0;
+    }
+    #advert {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+    .section3-h3 {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin: 1rem 0 0 0;
+      color: #adadad;
+      font-family: rubik-regular, sans-serif;
+    }
+    .section3-h1 {
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      color: #535353;
+      margin: 0.5rem 0 1rem 0;
+      font-family: rubik-medium, sans-serif;
+    }
+    .mobile-slides {
+      display: none;
+    }
+    .section3-text {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #8d8d8d;
+    }
+    .price {
+      font-size: 1.2rem;
+      line-height: 1rem;
+      padding-top: 1rem;
+      color: #000000;
+      font-family: rubik-medium, sans-serif;
+    }
+    .external-price-link {
+      font-family: ProximaNova-Semibold, serif;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #2e2e37;
+    }
+    #navigate-bullets {
+      display: flex;
+      justify-self: center;
+      align-items: end;
+      gap: 1rem;
+    }
+    .bullet {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      background: #6c6c6c;
+      align-content: center;
+      display: grid;
+      cursor: pointer;
+    }
+    .bl {
+      border: 1px solid #707070;
+    }
+    .br {
+      background: #0055a5;
+    }
+    #fourth {
+      background: #f4f7fa;
+      padding: 2rem 0;
+    }
+    #fourth > .container {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-column-gap: 3rem;
+    }
+    .section3-h1 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .card-container {
+      height: 80%;
+      width: 100%;
+      background: rgba(199, 199, 199, 0.09);
+      border-radius: 9px;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+      grid-gap: 1em;
+      justify-self: end;
+    }
+    .cards {
+      background: #fafafa;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      padding-left: 1rem;
+      grid-gap: 10px;
+      align-items: center;
+      justify-items: left;
+      height: 100%;
+      width: 100%;
+    }
+    .first-card {
+      background: #0055a5;
+      border: 2px solid #ffffff;
+    }
+    .card-icon-circle {
+      height: 79px;
+      width: 79px;
+      border-radius: 50%;
+      background: #0055a5;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    .first-card > .card-icon-circle {
+      background: #ffffff;
+    }
+    .first-card > .card-icon-circle > .card-icon {
+      color: #0055a5;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: #adadad;
+      font-family: rubik-regular, sans-serif;
+    }
+    .card-amount {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: #030501;
+      font-family: rubik-medium, sans-serif;
+    }
+    #section4-image {
+      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      border-radius: 27px;
+      margin: 3rem 0;
+    }
+    .question-bg {
+      position: absolute;
+      justify-self: center;
+      font-size: 10rem;
+      color: #f8f8f8;
+    }
+    .section5-h3,
+    .section5-h1 {
+      position: relative;
+    }
+    .section5-h3 {
+      font-size: 1.1rem;
+      line-height: 1.1rem;
+      color: #adadad;
+      width: auto;
+      font-family: rubik-regular, sans-serif;
+      padding: 3rem 0 1rem 0;
+    }
+    .section5-h1 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #535353;
+      width: auto;
+      font-family: rubik-medium, sans-serif;
+      padding: 0 0 2rem 0;
+    }
+    .section5-card-container {
+      background: none;
+      padding: 1em 0;
+      width: 100%;
+    }
+    .section5.cards {
+      background: none;
+      grid-template-columns: 1fr auto;
+      grid-gap: 1rem;
+      padding-left: 0;
+    }
+    .section5 > .card-icon-circle {
+      background: #ffffff;
+      border: 2px solid #535353;
+      grid-row: 1 / span 2;
+    }
+    .section5 > .second-circle {
+      background: #fef229;
+      grid-row: 1 / span 2;
+    }
+    .section5-card-icon {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      color: #535353;
+      width: auto;
+    }
+    .section5-card-title {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      color: #0b0b0b;
+      -webkit-line-clamp: 1;
+      font-family: rubik-regular, sans-serif;
+    }
+    .section5-card-amount {
+      grid-column: 2;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      color: #8d8d8d;
+      -webkit-line-clamp: 2;
+      font-family: rubik-regular, sans-serif;
+    }
+    .section5-btn {
+      border: 1px solid #707070;
+      background: #ffffff;
+      padding: 1rem 3rem;
+      margin: 2rem 0 15vh 0;
+    }
+    .section5-btn > span:first-child {
+      font-size: 1rem;
+      line-height: 1rem;
+      color: #777777;
+      font-family: rubik-regular, sans-serif;
+      align-self: center;
+    }
+    .section5-btn > .visibility {
+      color: #777777;
+      font-size: 1.5rem;
+    }
+    #sixth {
+      background: #0055a5;
+      padding: 0 0 5rem 0;
+    }
+    #section6-image {
+      padding: 0;
+      background: #ffffff;
+      opacity: 53%;
+      border-radius: 23px;
+      border: 10px solid rgba(237, 235, 235, 8%);
+      margin: 4rem 0 5rem 0;
+      width: 100%;
+      height: 50vh;
+    }
+    .buttons {
+      width: 100%;
+      text-align: center;
+    }
+    .buttons > button {
+      border-radius: 60px;
+      width: auto;
+      padding: 1rem 2.5rem;
+      border: none;
+      font-family: rubik-regular, sans-serif;
+      margin: 0 1rem;
+    }
+    .buttons > button:first-child {
+      background: #ffffff;
+      padding: 1rem 2rem;
+      color: #777777;
+    }
+    .buttons > button:last-child {
+      background: #fef229;
+      color: #000000;
+    }
+    .next-step-grid {
+      display: grid;
+      grid-template-columns: 65% 35%;
+      padding-top: 5rem;
+      grid-gap: 2vw;
+    }
+    .section6-h3 {
+      font-size: 1rem;
+      line-height: 1rem;
+      color: #ffffff;
+      opacity: 67%;
+      font-family: rubik-regular, sans-serif;
+    }
+    .section6-h1 {
+      font-size: 2rem;
+      line-height: 2.1rem;
+      color: #ffffff;
+      font-family: rubik-medium, sans-serif;
+      padding: 1rem 0;
+    }
+    .section6-text {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: #ffffff;
+      font-family: rubik-regular, sans-serif;
+      padding: 2rem 0 3rem 0;
+    }
+    .proceed {
+      background: #ffffff;
+      border-radius: 60px;
+      padding: 0.8rem 2rem;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 5px;
+      align-items: center;
+    }
+    .read-more-button.proceed > span:first-child {
+      color: #000000;
+    }
+    .proceed-icon {
+      font-size: 2rem;
+    }
+    .proceed > span:last-child {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: #000000;
+      font-family: rubik-regular, sans-serif;
+    }
+    .content-card {
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+    }
+    .filled-circle {
+      height: 18px;
+      width: 18px;
+      background: #ffffff;
+      margin: 1em;
+      border-radius: 50%;
+    }
+    .content-card > p {
+      line-height: 1.5rem;
+      color: #ffffff;
+      padding: 12px 2rem 0 2rem;
+      font-family: rubik-regular, sans-serif;
+      margin: revert;
+    }
+    b {
+      font-family: rubik-bold, sans-serif;
+    }
+    .footer-hr {
+      color: #2870b4;
+    }
+    #footer {
+      padding: 5vh 0;
+      background: #0055a5;
+    }
+    #footer > .container > .card-container {
+      background: none;
+      grid-template-columns: auto auto 1fr;
+      grid-gap: 5rem;
+      width: 100%;
+    }
+    .footer-card {
+      background: none;
+    }
+    .footer-card > .card-icon {
+      color: #fafafa;
+      font-size: 48px;
+    }
+    .footer-card-title {
+      font-size: 0.9rem;
+      line-height: 1rem;
+      color: #ffffff;
+      font-family: rubik-medium, sans-serif;
+    }
+    .footer-card-amount {
+      font-size: 1rem;
+      line-height: 1.1rem;
+      color: #fafafa;
+      font-family: rubik-regular, sans-serif;
     }
   </style>
 </html>
