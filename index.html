@@ -99,16 +99,6 @@
             <span>See Details</span>
             <span class="material-icons-outlined">expand_more</span>
           </div>
-          <!--          <img-->
-          <!--            src="./public/assets/ev.png"-->
-          <!--            style="-->
-          <!--              position: absolute;-->
-          <!--              left: 30%;-->
-          <!--              top: 60%;-->
-          <!--              height: 100vh;-->
-          <!--              width: 60vw;-->
-          <!--            "-->
-          <!--          />-->
         </div>
       </section>
       <section id="second" class="section">
@@ -171,6 +161,7 @@
           alt="mountain view"
         />
       </section>
+      <div id="section2-1-image"></div>
       <section id="third" class="section">
         <div id="advert" class="container">
           <img
@@ -217,7 +208,7 @@
               class="text section3-text hidden-text"
               style="display: -webkit-box"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+              Lorem Ipsum is simply dummy text of the printing <br> and typesetting
               industry. Lorem Ipsum has been the industry’s standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
@@ -554,14 +545,16 @@
       });
 
       function showSections() {
-        const button = document.querySelector(".see-details");
-        button.addEventListener("click", () => {
-          isHiddenSections = !isHiddenSections;
-          document.querySelector(".see-details > span").textContent =
-            isHiddenSections ? "See Details" : "Show less";
-          document.querySelector(".see-details > span:last-child").textContent =
-            isHiddenSections ? "expand_more" : "expand_less";
-        });
+        const buttons = document.querySelectorAll(".see-details > span");
+        buttons.forEach(e => {
+          e.addEventListener("click", () => {
+            isHiddenSections = !isHiddenSections;
+            document.querySelector(".see-details > span").textContent =
+                    isHiddenSections ? "See Details" : "Show less";
+            document.querySelector(".see-details > span:last-child").textContent =
+                    isHiddenSections ? "expand_more" : "expand_less";
+          })
+        })
       }
 
       function readMore(buttonId, textId) {
@@ -831,6 +824,7 @@
         display: flex;
       }
       .phone {
+        grid-template-columns: 1fr 4fr !important;
         border: 1px solid #626262 !important;
       }
       .call {
@@ -858,9 +852,17 @@
         height: 100% !important;
         align-content: space-evenly;
       }
+      .see-details {
+        width: 95% !important;
+        background-size: 100% !important;
+        top: 90% !important;
+      }
       .see-details > span:first-child {
         font-size: 1.2rem !important;
         line-height: 1.2rem !important;
+      }
+      .see-details > span:last-child {
+        padding-left: 2rem;
       }
       #third {
         grid-template-rows: 1fr auto !important;
@@ -886,7 +888,8 @@
         text-decoration: underline !important;
       }
       .section3-text {
-        padding-top: 2rem !important;
+        padding-top: 1rem !important;
+        line-height: 1.2rem !important;
       }
       .bullet {
         height: 3rem !important;
@@ -1090,7 +1093,7 @@
     .phone {
       border: 1px solid #c9c9c9;
       display: grid;
-      grid-template-columns: 1fr 4fr;
+      grid-template-columns: 1fr 3fr;
       align-items: center;
       justify-content: center;
       border-radius: 34px;
@@ -1193,11 +1196,19 @@
       border-right: 1px dashed #707070;
     }
     .see-details {
-      cursor: pointer;
+      background-image: url("/assets/ev.png");
+      width: 80%;
+      height: 100%;
+      background-size: 80%;
+      background-position-y: -5vh;
+      position: absolute;
+      top: 80%;
+      display: block;
       justify-self: start;
-      align-self: center;
-      display: grid;
-      justify-content: center;
+      background-repeat: no-repeat;
+    }
+    .see-details > span {
+      cursor: pointer;
     }
     .see-details > span:first-child {
       font-family: rubik-regular, sans-serif;
@@ -1208,6 +1219,8 @@
     .see-details > span:last-child {
       color: #2e2b2b;
       width: auto;
+      justify-content: start;
+      padding-left: 1rem;
     }
     .section2-h3 {
       font-family: rubik-regular, sans-serif;
@@ -1308,6 +1321,14 @@
       text-align: left;
       color: #000000;
     }
+    #section2-1-image {
+      position: absolute;
+      background-image: url("/assets/Image 26.png");
+      height: 50vh;
+      width: 100%;
+      background-position-y: 80vh;
+      background-size: 100%;
+    }
     #third {
       display: grid;
       grid-template-rows: 4fr 1fr;
@@ -1337,7 +1358,7 @@
     }
     .section3-text {
       font-size: 1rem;
-      line-height: 1.2rem;
+      line-height: 2rem;
       color: #8d8d8d;
     }
     .price {
