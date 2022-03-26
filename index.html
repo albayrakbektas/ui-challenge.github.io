@@ -95,9 +95,11 @@
               </div>
             </div>
           </div>
-          <div class="see-details">
-            <span>See Details</span>
-            <span class="material-icons-outlined">expand_more</span>
+          <div class="container">
+            <div class="see-details">
+              <span>See Details</span>
+              <span class="material-icons-outlined">expand_more</span>
+            </div>
           </div>
         </div>
       </section>
@@ -774,6 +776,7 @@
       padding: 0 20vw;
     }
     #first {
+      position: relative;
       display: grid;
       grid-template-columns: auto 1fr;
       background-image: url("./public/assets/section-1.1.png");
@@ -795,6 +798,10 @@
     .b-bottom {
       height: 3px;
       width: 16px;
+    }
+    #second {
+      position: sticky;
+      background: #ffffff;
     }
     @media screen and (max-width: 600px) {
       .container-1 {
@@ -856,6 +863,7 @@
         width: 95% !important;
         background-size: 100% !important;
         top: 90% !important;
+        background-position-y: 0 !important;
       }
       .see-details > span:first-child {
         font-size: 1.2rem !important;
@@ -1196,7 +1204,7 @@
       border-right: 1px dashed #707070;
     }
     .see-details {
-      background-image: url("/assets/ev.png");
+      background-image: url("public/assets/ev.png");
       width: 80%;
       height: 100%;
       background-size: 80%;
@@ -1323,7 +1331,7 @@
     }
     #section2-1-image {
       position: absolute;
-      background-image: url("/assets/Image 26.png");
+      background-image: url("public/assets/Image 26.png");
       height: 50vh;
       width: 100%;
       background-position-y: 80vh;
@@ -1333,6 +1341,7 @@
       display: grid;
       grid-template-rows: 4fr 1fr;
       padding: 2rem 0 2rem 0;
+      position: relative;
     }
     #advert {
       display: grid;
