@@ -1,0 +1,219 @@
+Content-Type: multipart/mixed; boundary=template
+MIME-Version: 1.0
+From: "Bektas Albayrak" <albayrakbektas44@gmail.com>
+To: "Iceberg Digital" <careers@iceberg-digital.co.uk>
+Subject: Test message
+
+--template
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE htmlPUBLIC>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  </head>
+  <body style="margin:0;padding:0;">
+    <p>-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  </p>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Challenge Email Template</title>
+    <div>
+      <table class="outer-table" style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+        <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+          <td style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+            <table class="mid-table" style="border-spacing:0;padding:0;width:100%;margin:0 auto;width:60%;">
+              <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                <td style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                  <table class="inner-table" style="border-spacing:0;padding:0;margin:0 auto;width:100%;">
+                    <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                      <td style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                        <a href="https://albayrakbektas.github.io/ui-challenge.github.io/"><img src="cid:img-1" alt="CarterBlack" border="0" width="100%"></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+          <td style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+            <table style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+              <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                <th style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                  <h2>
+                    A <b>round-up</b> of this month's blog <br/>
+                    posts you might like...
+                  </h2>
+                </th>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+          <td class="row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;display:inline-flex;padding:2vh 0;grid-column-gap:10px;align-items:start;width:95%;">
+            <img src="cid:img-2" alt="ev" style="height:100px;width:100px !important;max-width:50% !important;"/>
+
+            <table class="title-table" style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+              <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                <td class="inner-row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;padding-left:10px;">
+                  <h3 style="font-weight:600;margin-block-start:0;margin-block-end:0;">
+                    How can you speak the Landlords and Vendor that visit your
+                    website?
+                  </h3>
+                  <h5 style="font-weight:400;margin-block-start:0;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
+                    consectetur cum deserunt, dolore dolorum ex id iure libero
+                    maxime modi nihil non obcaecati officia repellat, sint
+                    voluptatibus! Ab at, consectetur dignissimos facilis harum
+                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
+                    soluta veniam voluptas.
+                  </h5>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+          <td class="row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;display:inline-flex;padding:2vh 0;grid-column-gap:10px;align-items:start;width:95%;">
+            <img src="cid:img-3" alt="ev" style="height:100px;width:100px !important;max-width:50% !important;"/>
+
+            <table class="title-table" style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+              <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                <td class="inner-row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;padding-left:10px;">
+                  <h3 style="font-weight:600;margin-block-start:0;margin-block-end:0;">
+                    How can you speak the Landlords and Vendor that visit your
+                    website?
+                  </h3>
+                  <h5 style="font-weight:400;margin-block-start:0;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
+                    consectetur cum deserunt, dolore dolorum ex id iure libero
+                    maxime modi nihil non obcaecati officia repellat, sint
+                    voluptatibus! Ab at, consectetur dignissimos facilis harum
+                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
+                    soluta veniam voluptas.
+                  </h5>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+          <td class="row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;display:inline-flex;padding:2vh 0;grid-column-gap:10px;align-items:start;width:95%;">
+            <img src="cid:img-4" alt="ev" style="height:100px;width:100px !important;max-width:50% !important;"/>
+
+            <table class="title-table" style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+              <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                <td class="inner-row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;padding-left:10px;">
+                  <h3 style="font-weight:600;margin-block-start:0;margin-block-end:0;">
+                    How can you speak the Landlords and Vendor that visit your
+                    website?
+                  </h3>
+                  <h5 style="font-weight:400;margin-block-start:0;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
+                    consectetur cum deserunt, dolore dolorum ex id iure libero
+                    maxime modi nihil non obcaecati officia repellat, sint
+                    voluptatibus! Ab at, consectetur dignissimos facilis harum
+                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
+                    soluta veniam voluptas.
+                  </h5>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+          <td class="row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;display:inline-flex;padding:2vh 0;grid-column-gap:10px;align-items:start;width:95%;">
+            <img src="cid:img-5" alt="ev" style="height:100px;width:100px !important;max-width:50% !important;"/>
+
+            <table class="title-table" style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+              <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                <td class="inner-row" style="border-spacing:0;padding:0;width:100%;margin:0 auto;padding-left:10px;">
+                  <h3 style="font-weight:600;margin-block-start:0;margin-block-end:0;">
+                    How can you speak the Landlords and Vendor that visit your
+                    website?
+                  </h3>
+                  <h5 style="font-weight:400;margin-block-start:0;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
+                    consectetur cum deserunt, dolore dolorum ex id iure libero
+                    maxime modi nihil non obcaecati officia repellat, sint
+                    voluptatibus! Ab at, consectetur dignissimos facilis harum
+                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
+                    soluta veniam voluptas.
+                  </h5>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+          <td style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+            <table class="footer-table" style="border-spacing:0;padding:0;margin:0 auto;width:100%;margin:auto;">
+              <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                <td style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                  <table class="inner-table" style="border-spacing:0;padding:0;margin:0 auto;width:100%;">
+                    <tr style="border-spacing:0;padding:0;width:100%;margin:0 auto;">
+                      <td style="border-spacing:0;padding:0;width:100%;margin:0 auto;display: flex; justify-content: center;">
+                        <a href="https://albayrakbektas.github.io/ui-challenge.github.io/" target="_blank" style="text-decoration: none">https://albayrakbektas.github.io/ui-challenge.github.io/</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
+
+--template
+Content-Type: image/png
+Content-ID:<img-1>
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+
+$PHOTO1
+
+--template
+Content-Type: image/png
+Content-ID:<img-2>
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+
+$PHOTO2
+
+--template
+Content-Type: image/png
+Content-ID:<img-3>
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+
+$PHOTO3
+
+--template
+Content-Type: image/png
+Content-ID:<img-4>
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+
+$PHOTO4
+
+--template
+Content-Type: image/png
+Content-ID:<img-5>
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+
+$PHOTO5
+
+--template--

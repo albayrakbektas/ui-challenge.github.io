@@ -22,7 +22,6 @@
               required="required"
               placeholder="John"
       /></label>
-    <!--        <div class="errorMessage" id="name">Name can not be empty</div>-->
     <br />
     <label
     >Surname*<br /><input
@@ -32,7 +31,6 @@
             required="required"
             placeholder="Due"
     /></label>
-    <!--        <div class="errorMessage" id="surname">Surname can not be empty</div>-->
     <br />
     <label
     >Phone*<br /><input
@@ -42,7 +40,6 @@
             required="required"
             placeholder="+90 505 *** ** **" /></label
     >
-    <!--        <div class="errorMessage" id="phone">Phone number can not be empty</div>-->
     <br />
 
     <label
@@ -53,7 +50,6 @@
             required="required"
             placeholder="example@gmail.com" /></label
     >
-    <!--        <div class="errorMessage" id="email">Invalid email address</div>-->
     <br />
 
     <label
@@ -63,7 +59,6 @@
     ></textarea
     ><br
     /></label>
-    <!--        <div class="errorMessage" id="message">Please write a message</div>-->
     <label class="permission"
     >Please confirm that it is okay for us to contact you about this
       information as well as products and services. (You will always be
@@ -77,14 +72,12 @@
             required="required"
     />Confirm</label
     >
-    <!--        <div class="errorMessage" id="confirm">Please confirm..</div>-->
     <br />
     <div class="form-buttons">
       <button class="form-button cancel" type="button">Cancel</button>
       <button class="form-button submit" type="submit">Send</button>
     </div>
   </form>
-  <!--      <div class="loader"></div>-->
 </div>
 <script>
   const form = document.querySelector('form')
@@ -92,26 +85,6 @@
     e.preventDefault()
   })
 
-
-  // const name = document.querySelector("input[name='pZ8o7keWgU']")
-  // const surname = document.querySelector('input[name="8Tjk0jYSRD"]')
-  // const phone = document.querySelector('input[name="qqpGSHVBQr"]')
-  // const email = document.querySelector('input[name="spD0cSD5KM"]')
-  // const message = document.querySelector('textarea[name="26shIIIHr2"]')
-  // const checkbox = document.querySelector('input[name="bLrNyBfEkX[]"]')
-  // const emailReg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  // function submit () {
-  //   let inputs = [name, surname, phone, email, message]
-  //   for (let input of inputs) {
-  //     if (input.value === "") {
-  //       input.style.borderColor = '#ff0000'
-  //       input.placeholder = ""
-  //     }
-  //   }
-  //   if (!checkbox.checked) checkbox.style.color = '#ff0000'
-  //   if (!email.value.match(emailReg)) console.log('yanlis mail')
-  //   console.log(name, surname, phone, email, message, checkbox)
-  // }
   function rootPage() {
     const button = document.querySelector(".cancel");
     button.addEventListener("click", () => {
@@ -247,13 +220,5 @@
   label {
     color: #707070;
   }
-  /*.errorMessage {*/
-  /*  display: none;*/
-  /*  justify-content: end;*/
-  /*  color: #ff0000;*/
-  /*}*/
-  /*#confirm {*/
-  /*  justify-content: start;*/
-  /*}*/
 </style>
 </html>

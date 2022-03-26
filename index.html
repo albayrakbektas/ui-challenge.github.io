@@ -172,18 +172,6 @@
             alt="mountain view"
             class="desktop-slides"
           />
-          <!--          <img-->
-          <!--                  id="section3-2-image"-->
-          <!--                  src="https://picsum.photos/553/438"-->
-          <!--                  alt="mountain view"-->
-          <!--                  class="desktop-slides"-->
-          <!--          />-->
-          <!--          <img-->
-          <!--                  id="section3-3-image"-->
-          <!--                  src="https://picsum.photos/554/438"-->
-          <!--                  alt="mountain view"-->
-          <!--                  class="desktop-slides"-->
-          <!--          />-->
           <div class="content">
             <h3 class="section3-h3">Property</h3>
             <h1 class="section3-h1">Comparable Properties</h1>
@@ -193,18 +181,6 @@
               alt="mountain view"
               class="mobile-slides"
             />
-            <!--            <img-->
-            <!--                    id="section3-2-image-mobile"-->
-            <!--                    src="https://picsum.photos/551/438"-->
-            <!--                    alt="mountain view"-->
-            <!--                    class="mobile-slides"-->
-            <!--            />-->
-            <!--            <img-->
-            <!--                    id="section3-3-image-mobile"-->
-            <!--                    src="https://picsum.photos/552/438"-->
-            <!--                    alt="mountain view"-->
-            <!--                    class="mobile-slides"-->
-            <!--            />-->
             <p
               id="second-text"
               class="text section3-text hidden-text"
@@ -526,6 +502,7 @@
     <script>
       let isHiddenSections = true;
 
+      // Mobile size menu display function
       function openMobileMenu() {
         const menu = document.querySelector("#mobile-menu");
         const openButton = document.querySelector(
@@ -539,6 +516,8 @@
           menu.style.display = "none";
         });
       }
+
+      // Mobile menu resize display for mobile/desktop
       window.addEventListener("resize", () => {
         const menu = document.querySelector("#mobile-menu");
         if (window.innerWidth > 600) {
@@ -546,7 +525,8 @@
         }
       });
 
-      function showSections() {
+      // Change See details button text and icon function
+      function seeDetails() {
         const buttons = document.querySelectorAll(".see-details > span");
         buttons.forEach(e => {
           e.addEventListener("click", () => {
@@ -559,6 +539,7 @@
         })
       }
 
+      // read-more button event for text display and button text/icon
       function readMore(buttonId, textId) {
         let button = document.querySelector(`#${buttonId}`);
         let text = document.querySelector(`#${textId}`);
@@ -583,6 +564,7 @@
         });
       }
 
+      // desktop menu elements titles
       const menuLinkTitles = [
         "Home",
         "About",
@@ -593,7 +575,10 @@
         "Faq",
         "Next Steps",
       ];
+      // mobile menu list
       const ul = document.getElementById("items");
+
+      // create mobile menu items and append mobile menu list
       const menuCreate = function () {
         for (let linkTitle of menuLinkTitles) {
           const li = document.createElement("li");
@@ -608,6 +593,7 @@
         }
       };
 
+      // create active class for mobile and desktop menu items
       const activeClass = function (parentId, elementClassName) {
         const ul = document.getElementById(parentId);
         let items = ul.getElementsByClassName(elementClassName);
@@ -623,66 +609,15 @@
         }
       };
 
+      // functions
       readMore("first-read-more-button", "first-text");
       readMore("second-read-more-button", "second-text");
       readMore("third-read-more-button", "third-text");
-      showSections();
+      seeDetails();
       menuCreate();
       openMobileMenu();
       activeClass("items", "item");
       activeClass("desktop-menu-icons", "nav");
-      formRouting();
-
-      // let slideIndex = 1;
-      // function plusDivs(n) {
-      //   showDivs(slideIndex += n);
-      // }
-      //
-      // function showDivs(n) {
-      //   let firstImg;
-      //   let images;
-      //   if (window.innerWidth < 600) {
-      //     images = document.querySelectorAll(".mobile-slides")
-      //     document.querySelectorAll(".desktop-slides").forEach(img => {
-      //       img.style.display = 'none'
-      //     })
-      //   } else {
-      //     images = document.querySelectorAll(".desktop-slides")
-      //     document.querySelectorAll(".mobile-slides").forEach(img => {
-      //       img.style.display = 'none'
-      //     })
-      //   }
-      //   console.log(images)
-      //   if (n > images.length) {slideIndex = 1}
-      //   if (n < 1) {slideIndex = images.length}
-      //   for (let i = 0; i < images.length; i++) {
-      //     images[i].style.display = "none";
-      //   }
-      //   images[slideIndex-1].style.display = "block";
-      // }
-      //
-      // document.querySelector('.bullet.bl').addEventListener('click', () => {
-      //   plusDivs(-1)
-      // })
-      // document.querySelector('.bullet.br').addEventListener('click', () => {
-      //   plusDivs(1)
-      // })
-      // window.innerWidth < 600 ?
-      //         document.querySelectorAll('.desktop-slides').forEach(img => {
-      //           img.style.display = 'none'
-      //         }) : document.querySelectorAll('.mobile-slides').forEach(img => {
-      //           img.style.display = 'none'
-      //         })
-      //
-      // window.addEventListener('resize', () => {
-      //   showDivs(slideIndex);
-      //   window.innerWidth < 600 ?
-      //     document.querySelectorAll('.desktop-slides').forEach(img => {
-      //       img.style.display = 'none'
-      //     }) : document.querySelectorAll('.mobile-slides').forEach(img => {
-      //       img.style.display = 'none'
-      //           })
-      // })
     </script>
   </body>
 
@@ -880,12 +815,6 @@
         grid-template-columns: 1fr !important;
         grid-gap: 0 !important;
       }
-      /*.desktop-slides {*/
-      /*  display: none !important;*/
-      /*}*/
-      /*.mobile-slides {*/
-      /*  display: none !important;*/
-      /*}*/
       #pdf-container {
         grid-row: 3;
         margin-top: 1rem !important;
@@ -1291,7 +1220,7 @@
       display: flex;
       border: 1px solid #707070;
       border-radius: 34px;
-      margin: 1rem auto 2rem;
+      margin: 1rem 0 2rem;
     }
 
     .read-more-text {
