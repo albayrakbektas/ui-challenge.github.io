@@ -168,31 +168,37 @@
         <div id="advert" class="container">
           <img
             id="section3-image"
-            src="./public/assets/section-3.1.png"
+            src="https://picsum.photos/400"
             alt="mountain view"
-            class="desktop-slides"
+            class="slides"
+          />
+          <img
+            id="section3.1-image"
+            src="https://picsum.photos/399"
+            alt="mountain view"
+            class="slides"
+          />
+          <img
+            id="section3.2-image"
+            src="https://picsum.photos/401"
+            alt="mountain view"
+            class="slides"
           />
           <div class="content">
             <h3 class="section3-h3">Property</h3>
             <h1 class="section3-h1">Comparable Properties</h1>
-            <img
-              id="section3-image-mobile"
-              src="./public/assets/section-3.1.png"
-              alt="mountain view"
-              class="mobile-slides"
-            />
             <p
               id="second-text"
               class="text section3-text hidden-text"
               style="display: -webkit-box"
             >
-              Lorem Ipsum is simply dummy text of the printing <br> and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
+              Lorem Ipsum is simply dummy text of the printing <br />
+              and typesetting industry. Lorem Ipsum has been the industry’s
+              standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap
+              into electronic typesetting, remaining essentially unchanged. It
+              was popularised in the 1960s with the release of Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and
@@ -500,6 +506,35 @@
     </div>
 
     <script>
+      // Slider for Section-3 Container mobile and desktop
+      let slideIndex = 1;
+      function showDivs(n) {
+        let images = document.querySelectorAll(".slides");
+        if (n > images.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = images.length;
+        }
+        for (let i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+        images[slideIndex - 1].style.display = "block";
+      }
+      showDivs(slideIndex);
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      const leftBtn = document.querySelector(".bl");
+      const rightBtn = document.querySelector(".br");
+      leftBtn.addEventListener("click", () => {
+        plusDivs(-1);
+      });
+      rightBtn.addEventListener("click", () => {
+        plusDivs(1);
+      });
+
       let isHiddenSections = true;
 
       // Mobile size menu display function
@@ -528,15 +563,16 @@
       // Change See details button text and icon function
       function seeDetails() {
         const buttons = document.querySelectorAll(".see-details > span");
-        buttons.forEach(e => {
+        buttons.forEach((e) => {
           e.addEventListener("click", () => {
             isHiddenSections = !isHiddenSections;
             document.querySelector(".see-details > span").textContent =
-                    isHiddenSections ? "See Details" : "Show less";
-            document.querySelector(".see-details > span:last-child").textContent =
-                    isHiddenSections ? "expand_more" : "expand_less";
-          })
-        })
+              isHiddenSections ? "See Details" : "Show less";
+            document.querySelector(
+              ".see-details > span:last-child"
+            ).textContent = isHiddenSections ? "expand_more" : "expand_less";
+          });
+        });
       }
 
       // read-more button event for text display and button text/icon
@@ -738,240 +774,6 @@
       position: sticky;
       background: #ffffff;
     }
-    @media screen and (max-width: 600px) {
-      .container-1 {
-        padding: 2vh 4vw !important;
-      }
-      .container {
-        padding: 2vh 4vw !important;
-        width: 100%;
-        margin: auto;
-        text-align: left;
-      }
-      .section {
-        text-align: left;
-      }
-      #first {
-        grid-template-columns: 1fr;
-        padding-bottom: 10vh;
-      }
-      #first-section-main {
-        grid-template-rows: auto 1fr !important;
-        grid-gap: 4vh;
-      }
-      #first-section-menu {
-        display: none;
-      }
-      .burger {
-        display: flex;
-      }
-      .phone {
-        grid-template-columns: 1fr 4fr !important;
-        border: 1px solid #626262 !important;
-      }
-      .call {
-        border: none !important;
-      }
-      .location-hr {
-        margin-bottom: 2vh;
-      }
-      .section1-location {
-        font-size: 2.5rem !important;
-      }
-      .dotted {
-        width: 100% !important;
-        border: 1px dashed #707070 !important;
-      }
-      .section1-address {
-        font-size: 1.5rem !important;
-        line-height: 2rem !important;
-      }
-      .first-section-main-mid {
-        grid-template-columns: 1fr !important;
-        grid-gap: 1rem !important;
-      }
-      .first-section-main-mid-right {
-        height: 100% !important;
-        align-content: space-evenly;
-      }
-      .see-details {
-        width: 95% !important;
-        background-size: 100% !important;
-        top: 90% !important;
-        background-position-y: 0 !important;
-      }
-      .see-details > span:first-child {
-        font-size: 1.2rem !important;
-        line-height: 1.2rem !important;
-      }
-      .see-details > span:last-child {
-        padding-left: 2rem;
-      }
-      #third {
-        grid-template-rows: 1fr auto !important;
-        padding: 2rem 0 !important;
-      }
-      #advert {
-        grid-template-columns: 1fr !important;
-        grid-gap: 0 !important;
-      }
-      #pdf-container {
-        grid-row: 3;
-        margin-top: 1rem !important;
-      }
-      .external-price-link {
-        font-size: 0.8rem !important;
-        line-height: 3rem !important;
-        text-decoration: underline !important;
-      }
-      .section3-text {
-        padding-top: 1rem !important;
-        line-height: 1.2rem !important;
-      }
-      .bullet {
-        height: 3rem !important;
-        width: 3rem !important;
-      }
-      #fourth {
-        padding: 0 !important;
-      }
-      #fourth > .container {
-        display: inline-block !important;
-      }
-      #section4-image {
-        height: 30vh;
-        margin: 1rem 0 !important;
-      }
-      .card-container {
-        padding: 1rem 0 !important;
-        width: 100% !important;
-        max-height: unset !important;
-        min-width: unset !important;
-      }
-      .cards {
-        padding: 3vh 4vw !important;
-      }
-      .question-bg {
-        font-size: 15vw !important;
-        line-height: 2rem !important;
-        align-self: end !important;
-        justify-self: center !important;
-        width: 80% !important;
-      }
-      .section5-h3 {
-        font-size: 0.8rem !important;
-        line-height: 1.1rem !important;
-        padding: 0 !important;
-      }
-      .section5-h1 {
-        font-size: 1.7rem !important;
-        line-height: 2rem !important;
-        padding: 0.5rem 0 !important;
-      }
-      .section5 > .card-icon-circle,
-      .section5 > .second-circle {
-        grid-row: 1 !important;
-        align-self: start;
-      }
-      .section5 > .card-icon-circle {
-        height: 41px !important;
-        width: 41px !important;
-      }
-      .section5 > .second-circle {
-        background: #ffffff !important;
-      }
-      .section5-card-icon {
-        font-size: 17px !important;
-        line-height: 19px !important;
-      }
-      .section5-card-title,
-      .section5-card-amount {
-        font-size: 1rem !important;
-        line-height: 1.2rem !important;
-      }
-      .section5-card-amount {
-        grid-column: 1 / span 2 !important;
-        -webkit-line-clamp: inherit !important;
-      }
-      .section5-hr {
-        width: 100% !important;
-      }
-      .section5-btn {
-        margin: 0 !important;
-      }
-      #section5-image {
-        display: inherit !important;
-        width: 100%;
-        height: 40vh;
-        border-radius: 8px;
-        padding: 1.5rem 0;
-      }
-      #section6-image {
-        display: none !important;
-      }
-      .buttons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2vw;
-      }
-      .buttons > button {
-        padding: 0.8rem 1.6rem !important;
-        margin: unset !important;
-      }
-      #sixth {
-        padding: 5vh 0 0 0 !important;
-      }
-      .next-step-grid {
-        grid-template-rows: auto auto !important;
-        grid-template-columns: 1fr !important;
-        padding: 5vh 0 0 0 !important;
-      }
-      .section6-h1 {
-        font-size: 1.5rem !important;
-        line-height: 1.5rem !important;
-        padding: 0.5rem 0 !important;
-      }
-      .section6-text {
-        line-height: 1.5rem !important;
-        padding: 1rem 0 1.5rem 0 !important;
-      }
-      .content-card {
-        grid-row: 1;
-        padding-bottom: 4vh !important;
-        margin: 2rem 0;
-      }
-      .content-card > .filled-circle {
-        height: 0.8rem !important;
-        width: 0.8rem !important;
-      }
-      .proceed-icon {
-        font-size: 1.5rem !important;
-      }
-      #footer {
-        padding: 0 0 1vh 0 !important;
-      }
-      #footer > .container > .card-container {
-        grid-template-columns: auto auto !important;
-        grid-column-gap: 5px !important;
-        grid-row-gap: 4vh !important;
-      }
-      .footer-card {
-        /*grid-gap: 2px !important;*/
-        padding: 0 !important;
-      }
-      .footer-card > .card-icon {
-        font-size: 2rem !important;
-      }
-      .footer-card-title {
-        font-size: 0.8rem !important;
-        line-height: 0.8rem !important;
-      }
-      .footer-card-amount {
-        font-size: 0.8rem !important;
-        line-height: 0.8rem !important;
-      }
-    }
-
     #first-section-menu {
       background: #0055a5;
       width: 6rem;
@@ -1291,9 +1093,6 @@
       margin: 0.5rem 0 1rem 0;
       font-family: rubik-medium, sans-serif;
     }
-    .mobile-slides {
-      display: none;
-    }
     .section3-text {
       font-size: 1rem;
       line-height: 2rem;
@@ -1311,6 +1110,10 @@
       font-size: 1rem;
       line-height: 1.5rem;
       color: #2e2e37;
+    }
+    .slides {
+      height: 100%;
+      object-fit: cover;
     }
     #navigate-bullets {
       display: flex;
@@ -1628,6 +1431,239 @@
       line-height: 1.1rem;
       color: #fafafa;
       font-family: rubik-regular, sans-serif;
+    }
+    @media screen and (max-width: 600px) {
+      .container-1 {
+        padding: 2vh 4vw !important;
+      }
+      .container {
+        padding: 2vh 4vw !important;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+      }
+      .section {
+        text-align: left;
+      }
+      #first {
+        grid-template-columns: 1fr;
+        padding-bottom: 10vh;
+      }
+      #first-section-main {
+        grid-template-rows: auto 1fr !important;
+        grid-gap: 4vh;
+      }
+      #first-section-menu {
+        display: none;
+      }
+      .burger {
+        display: flex;
+      }
+      .phone {
+        grid-template-columns: 1fr 4fr !important;
+        border: 1px solid #626262 !important;
+      }
+      .call {
+        border: none !important;
+      }
+      .location-hr {
+        margin-bottom: 2vh;
+      }
+      .section1-location {
+        font-size: 2.5rem !important;
+      }
+      .dotted {
+        width: 100% !important;
+        border: 1px dashed #707070 !important;
+      }
+      .section1-address {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+      }
+      .first-section-main-mid {
+        grid-template-columns: 1fr !important;
+        grid-gap: 1rem !important;
+      }
+      .first-section-main-mid-right {
+        height: 100% !important;
+        align-content: space-evenly;
+      }
+      .see-details {
+        width: 95% !important;
+        background-size: 100% !important;
+        top: 90% !important;
+        background-position-y: 0 !important;
+      }
+      .see-details > span:first-child {
+        font-size: 1.2rem !important;
+        line-height: 1.2rem !important;
+      }
+      .see-details > span:last-child {
+        padding-left: 2rem;
+      }
+      #third {
+        grid-template-rows: 1fr auto !important;
+        padding: 2rem 0 !important;
+      }
+      #advert {
+        grid-template-columns: 1fr !important;
+        grid-gap: 0 !important;
+      }
+
+      #pdf-container {
+        grid-row: 3;
+        margin-top: 1rem !important;
+      }
+      .external-price-link {
+        font-size: 0.8rem !important;
+        line-height: 3rem !important;
+        text-decoration: underline !important;
+      }
+      .section3-text {
+        padding-top: 1rem !important;
+        line-height: 1.2rem !important;
+      }
+      .bullet {
+        height: 3rem !important;
+        width: 3rem !important;
+      }
+      #fourth {
+        padding: 0 !important;
+      }
+      #fourth > .container {
+        display: inline-block !important;
+      }
+      #section4-image {
+        height: 30vh;
+        margin: 1rem 0 !important;
+      }
+      .card-container {
+        padding: 1rem 0 !important;
+        width: 100% !important;
+        max-height: unset !important;
+        min-width: unset !important;
+      }
+      .cards {
+        padding: 3vh 4vw !important;
+      }
+      .question-bg {
+        font-size: 15vw !important;
+        line-height: 2rem !important;
+        align-self: end !important;
+        justify-self: center !important;
+        width: 80% !important;
+      }
+      .section5-h3 {
+        font-size: 0.8rem !important;
+        line-height: 1.1rem !important;
+        padding: 0 !important;
+      }
+      .section5-h1 {
+        font-size: 1.7rem !important;
+        line-height: 2rem !important;
+        padding: 0.5rem 0 !important;
+      }
+      .section5 > .card-icon-circle,
+      .section5 > .second-circle {
+        grid-row: 1 !important;
+        align-self: start;
+      }
+      .section5 > .card-icon-circle {
+        height: 41px !important;
+        width: 41px !important;
+      }
+      .section5 > .second-circle {
+        background: #ffffff !important;
+      }
+      .section5-card-icon {
+        font-size: 17px !important;
+        line-height: 19px !important;
+      }
+      .section5-card-title,
+      .section5-card-amount {
+        font-size: 1rem !important;
+        line-height: 1.2rem !important;
+      }
+      .section5-card-amount {
+        grid-column: 1 / span 2 !important;
+        -webkit-line-clamp: inherit !important;
+      }
+      .section5-hr {
+        width: 100% !important;
+      }
+      .section5-btn {
+        margin: 0 !important;
+      }
+      #section5-image {
+        display: inherit !important;
+        width: 100%;
+        height: 40vh;
+        border-radius: 8px;
+        padding: 1.5rem 0;
+      }
+      #section6-image {
+        display: none !important;
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+      }
+      .buttons > button {
+        padding: 0.8rem 1.6rem !important;
+        margin: unset !important;
+      }
+      #sixth {
+        padding: 5vh 0 0 0 !important;
+      }
+      .next-step-grid {
+        grid-template-rows: auto auto !important;
+        grid-template-columns: 1fr !important;
+        padding: 5vh 0 0 0 !important;
+      }
+      .section6-h1 {
+        font-size: 1.5rem !important;
+        line-height: 1.5rem !important;
+        padding: 0.5rem 0 !important;
+      }
+      .section6-text {
+        line-height: 1.5rem !important;
+        padding: 1rem 0 1.5rem 0 !important;
+      }
+      .content-card {
+        grid-row: 1;
+        padding-bottom: 4vh !important;
+        margin: 2rem 0;
+      }
+      .content-card > .filled-circle {
+        height: 0.8rem !important;
+        width: 0.8rem !important;
+      }
+      .proceed-icon {
+        font-size: 1.5rem !important;
+      }
+      #footer {
+        padding: 0 0 1vh 0 !important;
+      }
+      #footer > .container > .card-container {
+        grid-template-columns: auto auto !important;
+        grid-column-gap: 5px !important;
+        grid-row-gap: 4vh !important;
+      }
+      .footer-card {
+        padding: 0 !important;
+      }
+      .footer-card > .card-icon {
+        font-size: 2rem !important;
+      }
+      .footer-card-title {
+        font-size: 0.8rem !important;
+        line-height: 0.8rem !important;
+      }
+      .footer-card-amount {
+        font-size: 0.8rem !important;
+        line-height: 0.8rem !important;
+      }
     }
   </style>
 </html>
