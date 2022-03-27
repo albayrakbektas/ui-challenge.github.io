@@ -8,11 +8,11 @@ let mail = fs.readFileSync(
 
 // assets
 const imagesPaths = [
-  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/carterBlack.png",
-  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/section-3.1.png",
-  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/ev.png",
-  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/section-1.1.png",
-  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/section-2.1.png",
+  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/carterBlack.jpg",
+  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/mail-template.png",
+  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/mail-template.png",
+  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/mail-template.png",
+  "/Users/bektasalbayrak/WebstormProjects/ui-challenge/public/assets/mail-template.png",
 ];
 
 // replace new data to $PHOTO in template.eml file

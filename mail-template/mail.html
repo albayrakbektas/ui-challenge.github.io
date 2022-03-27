@@ -9,214 +9,222 @@
     <style type="text/css">
       body {
         margin: 0;
-        padding: 0;
       }
-      table,
-      tr,
-      th,
-      td {
+      table {
         border-spacing: 0;
+        width: 100%;
+      }
+      td {
         padding: 0;
-        width: 100%;
-        margin: 0 auto;
       }
-      h3 {
-        font-weight: 600;
-        margin-block-start: 0;
-        margin-block-end: 0;
+      p {
+        color: #aaa;
+        font-size: 1.2rem;
       }
-      h5 {
-        font-weight: 400;
-        margin-block-start: 0;
+      a {
+        text-decoration: none;
+        color: #0b0b0b;
+        font-weight: bold;
       }
-      td.row {
-        display: inline-flex;
-        padding: 2vh 0;
-        grid-column-gap: 10px;
-        align-items: start;
-        width: 95%;
+      td > img {
+        width: 120px !important;
       }
-      td.row > img {
-        width: 100px !important;
-        height: 100px;
-        max-width: 50% !important;
+      tr {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-gap: 3rem;
       }
-      .mid-table {
-        width: 60%;
-      }
-      .inner-row {
-        padding-left: 10px;
-      }
-      .inner-table {
-        width: 100%;
-      }
-      .footer-table {
-        width: 100%;
-        margin: auto;
+      @media only screen and (max-width: 480px) {
+        td > img {
+          width: 120px !important;
+          height: 80px !important;
+        }
       }
     </style>
   </head>
   <body>
-    <div>
-      <table class="outer-table">
-        <tr>
-          <td>
-            <table class="mid-table">
-              <tr>
-                <td>
-                  <table class="inner-table">
-                    <tr>
-                      <td>
-                        <a
-                          href="https://albayrakbektas.github.io/ui-challenge.github.io/"
-                          ><img
-                            src="cid:img-1"
-                            alt="CarterBlack"
-                            border="0"
-                            width="100%"
-                        /></a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <table>
-              <tr>
-                <th>
-                  <h2>
-                    A <b>round-up</b> of this month's blog <br />
-                    posts you might like...
-                  </h2>
-                </th>
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="row">
-            <img src="cid:img-2" alt="ev" />
-            <table class="title-table">
-              <tr>
-                <td class="inner-row">
-                  <h3>
-                    How can you speak the Landlords and Vendor that visit your
-                    website?
-                  </h3>
-                  <h5>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
-                    consectetur cum deserunt, dolore dolorum ex id iure libero
-                    maxime modi nihil non obcaecati officia repellat, sint
-                    voluptatibus! Ab at, consectetur dignissimos facilis harum
-                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
-                    soluta veniam voluptas.
-                  </h5>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td class="row">
-            <img src="cid:img-3" alt="ev" />
-            <table class="title-table">
-              <tr>
-                <td class="inner-row">
-                  <h3>
-                    How can you speak the Landlords and Vendor that visit your
-                    website?
-                  </h3>
-                  <h5>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
-                    consectetur cum deserunt, dolore dolorum ex id iure libero
-                    maxime modi nihil non obcaecati officia repellat, sint
-                    voluptatibus! Ab at, consectetur dignissimos facilis harum
-                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
-                    soluta veniam voluptas.
-                  </h5>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td class="row">
-            <img src="cid:img-4" alt="ev" />
-            <table class="title-table">
-              <tr>
-                <td class="inner-row">
-                  <h3>
-                    How can you speak the Landlords and Vendor that visit your
-                    website?
-                  </h3>
-                  <h5>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
-                    consectetur cum deserunt, dolore dolorum ex id iure libero
-                    maxime modi nihil non obcaecati officia repellat, sint
-                    voluptatibus! Ab at, consectetur dignissimos facilis harum
-                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
-                    soluta veniam voluptas.
-                  </h5>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td class="row">
-            <img src="cid:img-5" alt="ev" />
-            <table class="title-table">
-              <tr>
-                <td class="inner-row">
-                  <h3>
-                    How can you speak the Landlords and Vendor that visit your
-                    website?
-                  </h3>
-                  <h5>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Incidunt, magnam repudiandae! Ad asperiores aut commodi
-                    consectetur cum deserunt, dolore dolorum ex id iure libero
-                    maxime modi nihil non obcaecati officia repellat, sint
-                    voluptatibus! Ab at, consectetur dignissimos facilis harum
-                    ipsa natus quaerat quas, quidem ratione reiciendis saepe
-                    soluta veniam voluptas.
-                  </h5>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <table class="footer-table">
-              <tr>
-                <td>
-                  <table class="inner-table">
-                    <tr>
-                      <td style="display: flex; justify-content: center">
-                        <a
-                          href="https://albayrakbektas.github.io/ui-challenge.github.io/"
-                          target="_blank"
-                          style="text-decoration: none"
-                          >https://albayrakbektas.github.io/ui-challenge.github.io/</a
+    <table class="main" style="width: 100%">
+      <tr style="width: 100%">
+        <td align="center">
+          <table>
+            <tr>
+              <td style="width: 100%">
+                <a
+                  href="https://albayrakbektas.github.io/ui-challenge.github.io/"
+                  ><img
+                    src="cid:img-1"
+                    alt="brand name: CarterBlack"
+                    width="300px"
+                    height="100px"
+                    style="max-width: 100%; max-height: 300px"
+                /></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr style="width: 100%">
+        <td align="center">
+          <table>
+            <tr>
+              <td>
+                <h1 style="text-align: center">
+                  A <b>round-up</b> of this month's blog <br />
+                  posts you might like...
+                </h1>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table style="padding: 10px">
+            <tr>
+              <td>
+                <table style="padding-left: 10px">
+                  <tr>
+                    <td valign="top" style="width: 25%">
+                      <img src="cid:img-2" alt="garden" />
+                    </td>
+                    <td style="vertical-align: baseline; padding: 1rem 0">
+                      <h2 style="margin: 0">
+                        How can you speak the Landlords and Vendor that visit
+                        your website?
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Incidunt, magnam repudiandae! Ad asperiores aut
+                        commodi consectetur cum deserunt, dolore dolorum ex id
+                        iure libero maxime modi nihil non obcaecati officia
+                        repellat, sint voluptatibus...<a
+                          href="https://github.com/albayrakbektas/ui-challenge.github.io/tree/main/mail-template"
+                          >click here</a
                         >
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </div>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table style="padding: 10px">
+            <tr>
+              <td>
+                <table style="padding-left: 10px">
+                  <tr>
+                    <td valign="top" style="width: 25%">
+                      <img src="cid:img-3" alt="garden" />
+                    </td>
+                    <td style="vertical-align: baseline; padding: 1rem 0">
+                      <h2 style="margin: 0">
+                        How can you speak the Landlords and Vendor that visit
+                        your website?
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Incidunt, magnam repudiandae! Ad asperiores aut
+                        commodi consectetur cum deserunt, dolore dolorum ex id
+                        iure libero maxime modi nihil non obcaecati officia
+                        repellat, sint voluptatibus...<a
+                          href="https://github.com/albayrakbektas/ui-challenge.github.io/tree/main/mail-template"
+                          >click here</a
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table style="padding: 10px">
+            <tr>
+              <td>
+                <table style="padding-left: 10px">
+                  <tr>
+                    <td valign="top" style="width: 25%">
+                      <img src="cid:img-4" alt="garden" />
+                    </td>
+                    <td style="vertical-align: baseline; padding: 1rem 0">
+                      <h2 style="margin: 0">
+                        How can you speak the Landlords and Vendor that visit
+                        your website?
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Incidunt, magnam repudiandae! Ad asperiores aut
+                        commodi consectetur cum deserunt, dolore dolorum ex id
+                        iure libero maxime modi nihil non obcaecati officia
+                        repellat, sint voluptatibus...<a
+                          href="https://github.com/albayrakbektas/ui-challenge.github.io/tree/main/mail-template"
+                          >click here</a
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table style="padding: 10px">
+            <tr>
+              <td>
+                <table style="padding-left: 10px">
+                  <tr>
+                    <td valign="top" style="width: 25%">
+                      <img src="cid:img-5" alt="garden" />
+                    </td>
+                    <td style="vertical-align: baseline; padding: 1rem 0">
+                      <h2 style="margin: 0">
+                        How can you speak the Landlords and Vendor that visit
+                        your website?
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Incidunt, magnam repudiandae! Ad asperiores aut
+                        commodi consectetur cum deserunt, dolore dolorum ex id
+                        iure libero maxime modi nihil non obcaecati officia
+                        repellat, sint voluptatibus...<a
+                          href="https://github.com/albayrakbektas/ui-challenge.github.io/tree/main/mail-template"
+                          >click here</a
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr style="width: 100%">
+        <td align="center">
+          <table>
+            <tr>
+              <td>
+                <a
+                  href="https://albayrakbektas.github.io/ui-challenge.github.io/"
+                  target="_blank"
+                  style="text-decoration: none"
+                  >https://albayrakbektas.github.io/ui-challenge.github.io/</a
+                >
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
