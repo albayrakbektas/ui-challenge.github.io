@@ -1,224 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Form</title>
-</head>
-<body>
-<script
-        type="text/javascript"
-        src="https://akya.io/js/form/app.min.js"
-></script>
-<div id="form" class="">
-  <h2>Contact Form</h2>
-  <br />
-  <form action="#" method="post" data-lifesycle-form-id="uqZJLy5L06">
-    <label
-    >Name* <br />
-      <input
-              type="text"
-              name="pZ8o7keWgU"
-              value=""
-              required="required"
-              placeholder="John"
-      /></label>
-    <br />
-    <label
-    >Surname*<br /><input
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form</title>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://akya.io/js/form/app.min.js"
+    ></script>
+    <div id="form" class="">
+      <h2>Contact Form</h2>
+      <br />
+      <form action="#" method="post">
+<!--            data-lifesycle-form-id="uqZJLy5L06">-->
+        <label
+          >Name* <br />
+          <input
+            type="text"
+            name="pZ8o7keWgU"
+            value=""
+            required="required"
+            placeholder="John"
+        /></label>
+        <br />
+        <label
+          >Surname*<br /><input
             type="text"
             name="8Tjk0jYSRD"
             value=""
             required="required"
             placeholder="Due"
-    /></label>
-    <br />
-    <label
-    >Phone*<br /><input
+        /></label>
+        <br />
+        <label
+          >Phone*<br /><input
             type="tel"
             name="qqpGSHVBQr"
             value=""
             required="required"
-            placeholder="+90 505 *** ** **" /></label
-    >
-    <br />
+            placeholder="+90 505 *** ** **"
+        /></label>
+        <br />
 
-    <label
-    >E-Mail*<br /><input
+        <label
+          >E-Mail*<br /><input
             type="email"
             name="spD0cSD5KM"
             value=""
             required="required"
-            placeholder="example@gmail.com" /></label
-    >
-    <br />
+            placeholder="example@gmail.com"
+        /></label>
+        <br />
 
-    <label
-    >Message<br /><textarea
+        <label
+          >Message<br /><textarea
             name="26shIIIHr2"
             placeholder="Enter text here..."
-    ></textarea
-    ><br
-    /></label>
-    <label class="permission"
-    >Please confirm that it is okay for us to contact you about this
-      information as well as products and services. (You will always be
-      given the right to unsubscribe at any point in the future)</label
-    ><br />
-    <label class="checkbox"
-    ><input
+          ></textarea
+          ><br
+        /></label>
+        <label class="permission"
+          >Please confirm that it is okay for us to contact you about this
+          information as well as products and services. (You will always be
+          given the right to unsubscribe at any point in the future)</label
+        ><br />
+        <label class="checkbox"
+          ><input
             type="checkbox"
             name="bLrNyBfEkX[]"
             value="fTkAFAUcD21647259131"
             required="required"
-    />Confirm</label
-    >
-    <br />
-    <div class="form-buttons">
-      <button class="form-button cancel" type="button">Cancel</button>
-      <button class="form-button submit" type="submit">Send</button>
+          />Confirm</label
+        >
+        <br />
+        <div class="form-buttons">
+          <button class="form-button cancel" type="button">Cancel</button>
+          <button class="form-button submit" type="submit" disabled>Send</button>
+        </div>
+      </form>
     </div>
-  </form>
-</div>
-<script>
-  const form = document.querySelector('form')
-  form.addEventListener('submit', (e) => {
-    e.preventDefault()
-  })
+    <script>
+      // const form = document.querySelector("form");
+      // form.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+      // });
 
-  function rootPage() {
-    const button = document.querySelector(".cancel");
-    button.addEventListener("click", () => {
-      window.location.replace(
-        "https://albayrakbektas.github.io/ui-challenge.github.io/"
-      );
-    });
-  }
-  rootPage();
-</script>
-<script type="text/javascript">
-  new LifesycleForm({
-    formId: "uqZJLy5L06", // Indicates the identity of this form. is a required field.
+      function rootPage() {
+        const button = document.querySelector(".cancel");
+        button.addEventListener("click", () => {
+          window.location.replace(
+            "https://albayrakbektas.github.io/ui-challenge.github.io/"
+          );
+        });
+      }
+      rootPage();
+    </script>
+    <script type="text/javascript">
+      new LifesycleForm({
+        // formId: "uqZJLy5L06", // Indicates the identity of this form. is a required field.
 
-    showLoading: true, // if true shows a full page loading screen when submit button clicked,
+        showLoading: true, // if true shows a full page loading screen when submit button clicked,
 
-    showPopup: true,
+        showPopup: true,
 
-    beforeSend: () => {
-      // triggered just before form data is submitted
-    },
+        beforeSend: () => {
+          // triggered just before form data is submitted
+        },
 
-    afterSend: (event, response) => {
-      // triggered shortly after form data is submitted
-    },
+        afterSend: (event, response) => {
+          // triggered shortly after form data is submitted
+        },
 
-    onSuccess: (event, response) => {
-      // overrides lifesycles default operations like showing success messages and redirecting after successfull request, you can use lifesycle_response as callback data to manage your operations.
-    },
+        onSuccess: (event, response) => {
+          // overrides lifesycles default operations like showing success messages and redirecting after successfull request, you can use lifesycle_response as callback data to manage your operations.
+        },
 
-    onError: (event, response) => {
-      // overrides lifesycles default operations like showing error messages after unsuccessfull request, you can use lifesycle_response as callback data to manage your operations.
-    },
+        onError: (event, response) => {
+          // overrides lifesycles default operations like showing error messages after unsuccessfull request, you can use lifesycle_response as callback data to manage your operations.
+        },
 
-    validate: (form) => {
-      // You can control the required fields in the form in this optional function.
+        validate: (form) => {
+          // You can control the required fields in the form in this optional function.
 
-      return true;
-    },
-  });
-</script>
-</body>
-<style>
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: rubik-regular, sans-serif;
-    box-sizing: border-box;
-  }
-  @media screen and (max-width: 600px) {
+          return true;
+        },
+      });
+    </script>
+  </body>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: rubik-regular, sans-serif;
+      box-sizing: border-box;
+    }
+    @media screen and (max-width: 600px) {
+      #form {
+        padding: 1rem 1rem !important;
+        width: 90% !important;
+      }
+      input,
+      textarea {
+        padding: 0.6rem !important;
+        margin: 0.3rem 0 0.9rem !important;
+      }
+      .permission {
+        font-size: 0.6rem !important;
+        display: inherit;
+      }
+      .form-buttons {
+        gap: 0.5rem !important;
+      }
+      .form-button {
+        height: 7vh !important;
+        width: 30vw !important;
+      }
+    }
+    input:focus,
+    textarea:focus {
+      border: initial !important;
+    }
+    ::placeholder {
+      color: #b4b4b4;
+    }
     #form {
-      padding: 1rem 1rem !important;
-      width: 90% !important;
+      border: 1px solid #707070;
+      border-radius: 11px;
+      margin: 1rem auto;
+      padding: 1rem 3rem;
+      width: 45vw;
     }
     input,
     textarea {
-      padding: 0.6rem !important;
-      margin: 0.3rem 0 0.9rem !important;
+      border: 1px solid #707070;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+      padding: 0.8rem 1.2rem;
+      margin: 0.8rem 0 1.2rem 0;
+      color: #535353;
     }
-    .permission {
-      font-size: 0.6rem !important;
-      display: inherit;
+    input[type="checkbox"] {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
+    }
+    textarea {
+      height: 5rem;
+    }
+    h2 {
+      color: #535353;
+      font-family: rubik-medium, sans-serif;
     }
     .form-buttons {
-      gap: 0.5rem !important;
+      display: flex;
+      justify-content: end;
+      gap: 1rem;
     }
     .form-button {
-      height: 7vh !important;
-      width: 30vw !important;
+      border-radius: 34px;
+      font-size: 1rem;
+      color: #777777;
+      width: 15vw;
+      height: 6vh;
+      border: 1px solid #707070;
+      cursor: pointer;
+      background: none;
     }
-  }
-  input:focus, textarea:focus {
-    border: initial !important;
-  }
-  ::placeholder {
-    color: #b4b4b4;
-  }
-  #form {
-    border: 1px solid #707070;
-    border-radius: 11px;
-    margin: 1rem auto;
-    padding: 1rem 3rem;
-    width: 45vw;
-  }
-  input,
-  textarea {
-    border: 1px solid #707070;
-    border-radius: 6px;
-    font-size: 1rem;
-    width: 100%;
-    padding: 0.8rem 1.2rem;
-    margin: 0.8rem 0 1.2rem 0;
-    color: #535353;
-  }
-  input[type="checkbox"] {
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.5rem;
-  }
-  textarea {
-    height: 5rem;
-  }
-  h2 {
-    color: #535353;
-    font-family: rubik-medium, sans-serif;
-  }
-  .form-buttons {
-    display: flex;
-    justify-content: end;
-    gap: 1rem;
-  }
-  .form-button {
-    border-radius: 34px;
-    font-size: 1rem;
-    color: #777777;
-    width: 15vw;
-    height: 6vh;
-    border: 1px solid #707070;
-    cursor: pointer;
-    background: none;
-  }
-  .form-button:hover {
-    opacity: 80%;
-  }
-  .submit {
-    background: #0055a5;
-    color: #ffffff;
-  }
-  .permission {
-    font-size: 0.8rem;
-    color: #707070;
-  }
-  label {
-    color: #707070;
-  }
-</style>
+    .form-button:hover {
+      opacity: 80%;
+    }
+    .submit {
+      background: #0055a5;
+      color: #ffffff;
+    }
+    .permission {
+      font-size: 0.8rem;
+      color: #707070;
+    }
+    label {
+      color: #707070;
+    }
+  </style>
 </html>
